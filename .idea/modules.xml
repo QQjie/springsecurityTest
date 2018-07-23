@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/angularserver.iml" filepath="$PROJECT_DIR$/.idea/modules/angularserver.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/angularserver_main.iml" filepath="$PROJECT_DIR$/.idea/modules/angularserver_main.iml" group="angularserver" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/angularserver_test.iml" filepath="$PROJECT_DIR$/.idea/modules/angularserver_test.iml" group="angularserver" />
+    </modules>
+  </component>
+</project>

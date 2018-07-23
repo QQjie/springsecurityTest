@@ -1,0 +1,1445 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="742c9c15-6c79-45d0-ba6c-b19e0dd82939" name="Default" comment="" />
+    <ignored path="$PROJECT_DIR$/out/" />
+    <ignored path="$PROJECT_DIR$/.gradle/" />
+    <ignored path="$PROJECT_DIR$/build/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CoverageDataManager">
+    <SUITE FILE_PATH="coverage/angularserver$AngularserverApplication__1_.ic" NAME="AngularserverApplication (1) Coverage Results" MODIFIED="1532056563692" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>com.cnsunet.kjw.*</FILTER>
+    </SUITE>
+  </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand />
+    <select />
+  </component>
+  <component name="ExternalProjectsData">
+    <projectState path="$PROJECT_DIR$">
+      <ProjectState />
+    </projectState>
+  </component>
+  <component name="ExternalProjectsManager">
+    <system id="GRADLE">
+      <state>
+        <projects_view>
+          <tree_state>
+            <expand>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="angularserver" type="f1a62948:ProjectNode" />
+              </path>
+            </expand>
+            <select />
+          </tree_state>
+        </projects_view>
+      </state>
+    </system>
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="CustomNotLoginAuthenticationEntryPoint.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/cnsunet/kjw/security/CustomNotLoginAuthenticationEntryPoint.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="339">
+              <caret line="31" column="19" lean-forward="true" selection-start-line="31" selection-start-column="19" selection-end-line="31" selection-end-column="19" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#6592#6593#0" expanded="true" />
+                <element signature="e#6636#6637#0" expanded="true" />
+                <element signature="e#6676#6677#0" expanded="true" />
+                <element signature="e#6709#6710#0" expanded="true" />
+                <element signature="e#6748#6749#0" expanded="true" />
+                <element signature="e#6783#6784#0" expanded="true" />
+                <element signature="e#6992#6993#0" expanded="true" />
+                <element signature="e#7025#7026#0" expanded="true" />
+                <element signature="e#7252#7253#0" expanded="true" />
+                <element signature="e#7287#7288#0" expanded="true" />
+                <element signature="e#7666#7667#0" expanded="true" />
+                <element signature="e#7710#7711#0" expanded="true" />
+                <element signature="e#7750#7751#0" expanded="true" />
+                <element signature="e#7783#7784#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="CustomPermissionEvaluator.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/cnsunet/kjw/security/CustomPermissionEvaluator.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="202">
+              <caret line="25" column="47" lean-forward="true" selection-start-line="25" selection-start-column="47" selection-end-line="25" selection-end-column="47" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="CustomSecurityExpressionRoot.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/cnsunet/kjw/security/CustomSecurityExpressionRoot.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="192">
+              <caret line="98" column="72" lean-forward="true" selection-start-line="98" selection-start-column="6" selection-end-line="98" selection-end-column="72" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="CustomAuthenticationProvider.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/cnsunet/kjw/security/CustomAuthenticationProvider.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="334">
+              <caret line="49" selection-start-line="49" selection-end-line="49" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="CustomWebAuthenticationDetails.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/cnsunet/kjw/security/CustomWebAuthenticationDetails.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="318">
+              <caret line="44" column="5" lean-forward="true" selection-start-line="44" selection-start-column="5" selection-end-line="44" selection-end-column="5" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="MethodSecurityConfiguration.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/cnsunet/kjw/security/MethodSecurityConfiguration.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="411">
+              <caret line="28" column="5" lean-forward="true" selection-start-line="28" selection-start-column="5" selection-end-line="28" selection-end-column="5" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="RestAuthenticationAccessDeniedHandler.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/cnsunet/kjw/security/RestAuthenticationAccessDeniedHandler.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="323">
+              <caret line="27" column="5" lean-forward="true" selection-start-line="27" selection-start-column="5" selection-end-line="27" selection-end-column="5" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="SecurityConfig.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/cnsunet/kjw/security/SecurityConfig.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-361">
+              <caret line="76" column="62" lean-forward="true" selection-start-line="76" selection-start-column="62" selection-end-line="76" selection-end-column="62" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="UserController.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/cnsunet/kjw/controller/sysmanage/UserController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="326">
+              <caret line="176" column="9" lean-forward="true" selection-start-line="176" selection-start-column="9" selection-end-line="176" selection-end-column="9" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="CustomMethodSecurityExpressionHandler.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/cnsunet/kjw/security/CustomMethodSecurityExpressionHandler.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="306">
+              <caret line="26" column="29" selection-start-line="26" selection-start-column="29" selection-end-line="26" selection-end-column="29" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Enum" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>添加</find>
+      <find>rolebyid</find>
+      <find>AntPathRequestMatcher</find>
+      <find>RoleById</find>
+      <find>查询角色失败</find>
+      <find>菜单</find>
+    </findStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="PATH_TO_GIT" value="git@github.com:QQjie/springsucurity.git" />
+    <option name="ROOT_SYNC" value="DONT_SYNC" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GradleLocalSettings">
+    <option name="myGradleHomes">
+      <map>
+        <entry key="$PROJECT_DIR$" value="G:\gradle\gradle-4.4.1" />
+      </map>
+    </option>
+    <option name="myGradleVersions">
+      <map>
+        <entry key="$PROJECT_DIR$" value="4.4.1" />
+      </map>
+    </option>
+    <option name="availableProjects">
+      <map>
+        <entry>
+          <key>
+            <ExternalProjectPojo>
+              <option name="name" value="angularserver" />
+              <option name="path" value="$PROJECT_DIR$" />
+            </ExternalProjectPojo>
+          </key>
+          <value>
+            <list>
+              <ExternalProjectPojo>
+                <option name="name" value="angularserver" />
+                <option name="path" value="$PROJECT_DIR$" />
+              </ExternalProjectPojo>
+            </list>
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="availableTasks">
+      <map>
+        <entry key="$PROJECT_DIR$">
+          <value>
+            <list>
+              <ExternalTaskPojo>
+                <option name="description" value="Displays the components produced by root project 'angularserver'. [incubating]" />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="components" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Assembles and tests this project and all projects that depend on it." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="buildDependents" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="cleanEclipseClasspath" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Displays the sub-projects of root project 'angularserver'." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="projects" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Cleans all Eclipse files." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="cleanEclipse" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Assembles main classes." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="classes" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Displays the dependent components of components in root project 'angularserver'. [incubating]" />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="dependentComponents" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Displays all buildscript dependencies declared in root project 'angularserver'." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="buildEnvironment" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="cleanEclipseProject" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Generates Gradle wrapper files." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="wrapper" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Assembles test classes." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="testClasses" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Generates Javadoc API documentation for the main source code." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="javadoc" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Assembles an executable jar archive containing the main classes and their dependencies." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="bootJar" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Generates the Eclipse classpath file." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="eclipseClasspath" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Assembles a jar archive containing the main classes." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="jar" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Displays the configuration model of root project 'angularserver'. [incubating]" />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="model" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Processes main resources." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="processResources" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Displays the tasks runnable from root project 'angularserver'." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="tasks" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="cleanEclipseJdt" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Initializes a new Gradle build." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="init" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Runs the unit tests." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="test" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Displays the dependency management declared in root project 'angularserver'." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="dependencyManagement" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Runs this project as a Spring Boot application." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="bootRun" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Compiles main Java source." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="compileJava" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Displays the insight into a specific dependency in root project 'angularserver'." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="dependencyInsight" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Runs all checks." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="check" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Assembles the outputs of this project." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="assemble" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Deletes the build directory." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="clean" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Compiles test Java source." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="compileTestJava" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Displays all dependencies declared in root project 'angularserver'." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="dependencies" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Generates all Eclipse files." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="eclipse" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Processes test resources." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="processTestResources" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Displays a help message." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="help" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Generates the Eclipse JDT settings file." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="eclipseJdt" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Assembles and tests this project." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="build" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Assembles and tests this project and all projects it depends on." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="buildNeeded" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Generates the Eclipse project file." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="eclipseProject" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Displays the properties of root project 'angularserver'." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="properties" />
+              </ExternalTaskPojo>
+            </list>
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="modificationStamps">
+      <map>
+        <entry key="$PROJECT_DIR$" value="4594260750105" />
+        <entry key="$PROJECT_DIR$/.gradle" value="0" />
+        <entry key="$PROJECT_DIR$/build.gradle" value="3609981104" />
+        <entry key="$PROJECT_DIR$/settings.gradle" value="487090489" />
+      </map>
+    </option>
+    <option name="projectBuildClasspath">
+      <map>
+        <entry key="$PROJECT_DIR$">
+          <value>
+            <ExternalProjectBuildClasspathPojo>
+              <option name="modulesBuildClasspath">
+                <map>
+                  <entry key="$PROJECT_DIR$">
+                    <value>
+                      <ExternalModuleBuildClasspathPojo>
+                        <option name="entries">
+                          <list>
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework.boot/spring-boot-gradle-plugin/2.0.3.RELEASE/3d37f03f22a82bf2255d9d94b0e66df4f7a12b59/spring-boot-gradle-plugin-2.0.3.RELEASE-sources.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework.boot/spring-boot-gradle-plugin/2.0.3.RELEASE/27c8cd6132784dd83e8c84ad14b603a08ed317e2/spring-boot-gradle-plugin-2.0.3.RELEASE.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework.boot/spring-boot-loader-tools/2.0.3.RELEASE/e71f594828551517334c56c68b26b7a477885ad7/spring-boot-loader-tools-2.0.3.RELEASE-sources.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework.boot/spring-boot-loader-tools/2.0.3.RELEASE/25d1d37146bce7cc585425f635601a2ba00c0200/spring-boot-loader-tools-2.0.3.RELEASE.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/io.spring.gradle/dependency-management-plugin/1.0.5.RELEASE/e9f2761e13da4228793ee5fcaa983889e68c4c61/dependency-management-plugin-1.0.5.RELEASE-sources.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/io.spring.gradle/dependency-management-plugin/1.0.5.RELEASE/3589987a66349bdc10b18c6c4a5463ffd084c908/dependency-management-plugin-1.0.5.RELEASE.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.apache.commons/commons-compress/1.14/43a23e357fa7b187c261520914c0b001ea1a62a2/commons-compress-1.14-sources.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.apache.commons/commons-compress/1.14/7b18320d668ab080758bf5383d6d8fcf750babce/commons-compress-1.14.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework/spring-core/5.0.7.RELEASE/8569ed2541916982f4c11ef90ca9c1ed5ba1b142/spring-core-5.0.7.RELEASE-sources.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework/spring-core/5.0.7.RELEASE/54b731178d81e66eca9623df772ff32718208137/spring-core-5.0.7.RELEASE.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework/spring-jcl/5.0.7.RELEASE/85c993272752ea7229cf44aa07c278a22b92420e/spring-jcl-5.0.7.RELEASE-sources.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework/spring-jcl/5.0.7.RELEASE/699016ddf454c2c167d9f84ae5777eccadf54728/spring-jcl-5.0.7.RELEASE.jar" />
+                          </list>
+                        </option>
+                        <option name="path" value="$PROJECT_DIR$" />
+                      </ExternalModuleBuildClasspathPojo>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+              <option name="name" value="angularserver" />
+              <option name="projectBuildClasspath">
+                <list>
+                  <option value="G:/gradle/gradle-4.4.1/lib/ant-1.9.9.jar" />
+                  <option value="G:/gradle/gradle-4.4.1/lib/ant-launcher-1.9.9.jar" />
+                  <option value="G:/gradle/gradle-4.4.1/lib/gradle-base-services-4.4.1.jar" />
+                  <option value="G:/gradle/gradle-4.4.1/lib/gradle-base-services-groovy-4.4.1.jar" />
+                  <option value="G:/gradle/gradle-4.4.1/lib/gradle-build-cache-4.4.1.jar" />
+                  <option value="G:/gradle/gradle-4.4.1/lib/gradle-build-option-4.4.1.jar" />
+                  <option value="G:/gradle/gradle-4.4.1/lib/gradle-cli-4.4.1.jar" />
+                  <option value="G:/gradle/gradle-4.4.1/lib/gradle-core-4.4.1.jar" />
+                  <option value="G:/gradle/gradle-4.4.1/lib/gradle-core-api-4.4.1.jar" />
+                  <option value="G:/gradle/gradle-4.4.1/lib/gradle-docs-4.4.1.jar" />
+                  <option value="G:/gradle/gradle-4.4.1/lib/gradle-installation-beacon-4.4.1.jar" />
+                  <option value="G:/gradle/gradle-4.4.1/lib/gradle-jvm-services-4.4.1.jar" />
+                  <option value="G:/gradle/gradle-4.4.1/lib/gradle-kotlin-dsl-0.13.2.jar" />
+                  <option value="G:/gradle/gradle-4.4.1/lib/gradle-kotlin-dsl-tooling-builders-0.13.2.jar" />
+                  <option value="G:/gradle/gradle-4.4.1/lib/gradle-kotlin-dsl-tooling-models-0.13.2.jar" />
+                  <option value="G:/gradle/gradle-4.4.1/lib/gradle-launcher-4.4.1.jar" />
+                  <option value="G:/gradle/gradle-4.4.1/lib/gradle-logging-4.4.1.jar" />
+                  <option value="G:/gradle/gradle-4.4.1/lib/gradle-messaging-4.4.1.jar" />
+                  <option value="G:/gradle/gradle-4.4.1/lib/gradle-model-core-4.4.1.jar" />
+                  <option value="G:/gradle/gradle-4.4.1/lib/gradle-model-groovy-4.4.1.jar" />
+                  <option value="G:/gradle/gradle-4.4.1/lib/gradle-native-4.4.1.jar" />
+                  <option value="G:/gradle/gradle-4.4.1/lib/gradle-persistent-cache-4.4.1.jar" />
+                  <option value="G:/gradle/gradle-4.4.1/lib/gradle-process-services-4.4.1.jar" />
+                  <option value="G:/gradle/gradle-4.4.1/lib/gradle-resources-4.4.1.jar" />
+                  <option value="G:/gradle/gradle-4.4.1/lib/gradle-runtime-api-info-4.4.1.jar" />
+                  <option value="G:/gradle/gradle-4.4.1/lib/gradle-tooling-api-4.4.1.jar" />
+                  <option value="G:/gradle/gradle-4.4.1/lib/gradle-wrapper-4.4.1.jar" />
+                  <option value="G:/gradle/gradle-4.4.1/lib/groovy-all-2.4.12.jar" />
+                  <option value="G:/gradle/gradle-4.4.1/lib/plugins/gradle-announce-4.4.1.jar" />
+                  <option value="G:/gradle/gradle-4.4.1/lib/plugins/gradle-antlr-4.4.1.jar" />
+                  <option value="G:/gradle/gradle-4.4.1/lib/plugins/gradle-build-cache-http-4.4.1.jar" />
+                  <option value="G:/gradle/gradle-4.4.1/lib/plugins/gradle-build-comparison-4.4.1.jar" />
+                  <option value="G:/gradle/gradle-4.4.1/lib/plugins/gradle-build-init-4.4.1.jar" />
+                  <option value="G:/gradle/gradle-4.4.1/lib/plugins/gradle-code-quality-4.4.1.jar" />
+                  <option value="G:/gradle/gradle-4.4.1/lib/plugins/gradle-composite-builds-4.4.1.jar" />
+                  <option value="G:/gradle/gradle-4.4.1/lib/plugins/gradle-dependency-management-4.4.1.jar" />
+                  <option value="G:/gradle/gradle-4.4.1/lib/plugins/gradle-diagnostics-4.4.1.jar" />
+                  <option value="G:/gradle/gradle-4.4.1/lib/plugins/gradle-ear-4.4.1.jar" />
+                  <option value="G:/gradle/gradle-4.4.1/lib/plugins/gradle-ide-4.4.1.jar" />
+                  <option value="G:/gradle/gradle-4.4.1/lib/plugins/gradle-ide-native-4.4.1.jar" />
+                  <option value="G:/gradle/gradle-4.4.1/lib/plugins/gradle-ide-play-4.4.1.jar" />
+                  <option value="G:/gradle/gradle-4.4.1/lib/plugins/gradle-ivy-4.4.1.jar" />
+                  <option value="G:/gradle/gradle-4.4.1/lib/plugins/gradle-jacoco-4.4.1.jar" />
+                  <option value="G:/gradle/gradle-4.4.1/lib/plugins/gradle-javascript-4.4.1.jar" />
+                  <option value="G:/gradle/gradle-4.4.1/lib/plugins/gradle-language-groovy-4.4.1.jar" />
+                  <option value="G:/gradle/gradle-4.4.1/lib/plugins/gradle-language-java-4.4.1.jar" />
+                  <option value="G:/gradle/gradle-4.4.1/lib/plugins/gradle-language-jvm-4.4.1.jar" />
+                  <option value="G:/gradle/gradle-4.4.1/lib/plugins/gradle-language-native-4.4.1.jar" />
+                  <option value="G:/gradle/gradle-4.4.1/lib/plugins/gradle-language-scala-4.4.1.jar" />
+                  <option value="G:/gradle/gradle-4.4.1/lib/plugins/gradle-maven-4.4.1.jar" />
+                  <option value="G:/gradle/gradle-4.4.1/lib/plugins/gradle-osgi-4.4.1.jar" />
+                  <option value="G:/gradle/gradle-4.4.1/lib/plugins/gradle-platform-base-4.4.1.jar" />
+                  <option value="G:/gradle/gradle-4.4.1/lib/plugins/gradle-platform-jvm-4.4.1.jar" />
+                  <option value="G:/gradle/gradle-4.4.1/lib/plugins/gradle-platform-native-4.4.1.jar" />
+                  <option value="G:/gradle/gradle-4.4.1/lib/plugins/gradle-platform-play-4.4.1.jar" />
+                  <option value="G:/gradle/gradle-4.4.1/lib/plugins/gradle-plugin-development-4.4.1.jar" />
+                  <option value="G:/gradle/gradle-4.4.1/lib/plugins/gradle-plugin-use-4.4.1.jar" />
+                  <option value="G:/gradle/gradle-4.4.1/lib/plugins/gradle-plugins-4.4.1.jar" />
+                  <option value="G:/gradle/gradle-4.4.1/lib/plugins/gradle-publish-4.4.1.jar" />
+                  <option value="G:/gradle/gradle-4.4.1/lib/plugins/gradle-reporting-4.4.1.jar" />
+                  <option value="G:/gradle/gradle-4.4.1/lib/plugins/gradle-resources-gcs-4.4.1.jar" />
+                  <option value="G:/gradle/gradle-4.4.1/lib/plugins/gradle-resources-http-4.4.1.jar" />
+                  <option value="G:/gradle/gradle-4.4.1/lib/plugins/gradle-resources-s3-4.4.1.jar" />
+                  <option value="G:/gradle/gradle-4.4.1/lib/plugins/gradle-resources-sftp-4.4.1.jar" />
+                  <option value="G:/gradle/gradle-4.4.1/lib/plugins/gradle-scala-4.4.1.jar" />
+                  <option value="G:/gradle/gradle-4.4.1/lib/plugins/gradle-signing-4.4.1.jar" />
+                  <option value="G:/gradle/gradle-4.4.1/lib/plugins/gradle-test-kit-4.4.1.jar" />
+                  <option value="G:/gradle/gradle-4.4.1/lib/plugins/gradle-testing-base-4.4.1.jar" />
+                  <option value="G:/gradle/gradle-4.4.1/lib/plugins/gradle-testing-jvm-4.4.1.jar" />
+                  <option value="G:/gradle/gradle-4.4.1/lib/plugins/gradle-testing-native-4.4.1.jar" />
+                  <option value="G:/gradle/gradle-4.4.1/lib/plugins/gradle-tooling-api-builders-4.4.1.jar" />
+                  <option value="G:/gradle/gradle-4.4.1/lib/plugins/gradle-version-control-4.4.1.jar" />
+                  <option value="G:/gradle/gradle-4.4.1/lib/plugins/gradle-workers-4.4.1.jar" />
+                  <option value="G:/gradle/gradle-4.4.1/lib/plugins/ivy-2.2.0.jar" />
+                  <option value="$PROJECT_DIR$/buildSrc/src/main/java" />
+                  <option value="$PROJECT_DIR$/buildSrc/src/main/groovy" />
+                </list>
+              </option>
+            </ExternalProjectBuildClasspathPojo>
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="projectSyncType">
+      <map>
+        <entry key="$PROJECT_DIR$" value="RE_IMPORT" />
+      </map>
+    </option>
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/src/main/java/com/cnsunet/kjw/config/setting/BaseDruidSetting.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/cnsunet/kjw/config/setting/FlowDruidSetting.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/cnsunet/kjw/config/setting/MyTestDruidSetting.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/cnsunet/kjw/config/setting/PmDruidSetting.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/cnsunet/kjw/config/setting/NspmsDruidSetting.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/cnsunet/kjw/config/DruidConfig.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/cnsunet/kjw/repository/FlowAllRepository.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/cnsunet/kjw/model/TreeBaseModel.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/cnsunet/kjw/model/sysnamager/MenuModel.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/cnsunet/kjw/model/sysnamager/RoleModel.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/cnsunet/kjw/security/MethodSecurityConfiguration.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/cnsunet/kjw/exception/ForbiddenException.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/cnsunet/kjw/security/RestAuthenticationAccessDeniedHandler.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/cnsunet/kjw/utils/page/OperateConst.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/cnsunet/kjw/security/CustomSercurityExpression/UserExpression.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/cnsunet/kjw/security/CustomMethodSecurityExpressionHandler.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/cnsunet/kjw/security/CustomSecurityExpressionRoot.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/cnsunet/kjw/service/sysmanage/IRoleService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/cnsunet/kjw/controller/sysmanage/RoleController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/cnsunet/kjw/service/sysmanage/IMenuService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/cnsunet/kjw/service/sysmanage/impl/MenuServiceImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/cnsunet/kjw/repository/sysmanage/PermissionRepository.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/cnsunet/kjw/security/CustomUsernamePasswordAuthenticationFilter.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/cnsunet/kjw/security/CustomWebAuthenticationDetails.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/cnsunet/kjw/service/sysmanage/impl/RoleServiceImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/cnsunet/kjw/repository/sysmanage/RoleRepository.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/cnsunet/kjw/model/sysnamager/PermissionModel.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/cnsunet/kjw/service/sysmanage/impl/UserService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/cnsunet/kjw/service/sysmanage/IUserService.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/cnsunet/kjw/AngularserverApplicationTests.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/cnsunet/kjw/service/sysmanage/impl/PermissionServiceImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/cnsunet/kjw/repository/sysmanage/UserRepository.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/cnsunet/kjw/service/sysmanage/IPermissionService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/cnsunet/kjw/controller/sysmanage/PermissionController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/cnsunet/kjw/repository/sysmanage/MenuRepository.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/cnsunet/kjw/controller/sysmanage/MenuController.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/static/api/login.html" />
+        <option value="$PROJECT_DIR$/src/main/resources/static/login.html" />
+        <option value="$PROJECT_DIR$/src/main/java/com/cnsunet/kjw/security/UrlAccessDecisionManager.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/cnsunet/kjw/security/UrlFilterInvocationSecurityMetadataSource.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/cnsunet/kjw/security/CustomSecurityConfig.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/cnsunet/kjw/security/CustomLoginFilter.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/cnsunet/kjw/controller/exception/ExceptionController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/cnsunet/kjw/security/CustomAuthenticationFailHander.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/cnsunet/kjw/security/CustomLogoutHandler.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/cnsunet/kjw/security/CustomLoginUrlAuthenticationEntryPoint.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/cnsunet/kjw/security/CustomNotLoginAuthenticationEntryPoint.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/cnsunet/kjw/security/SecurityConfig.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/cnsunet/kjw/utils/StatusDefineMessage.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/cnsunet/kjw/controller/sysmanage/UserController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/cnsunet/kjw/security/CustomAuthenticationProvider.java" />
+      </list>
+    </option>
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+    <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="NodePackageJsonFileManager">
+    <packageJsonPaths />
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="1659" />
+    <option name="y" value="72" />
+    <option name="width" value="1616" />
+    <option name="height" value="876" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="angularserver" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ideaWorksapces" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+            </path>
+            <path>
+              <item name="angularserver" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ideaWorksapces" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="angularserver" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ideaWorksapces" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+            </path>
+            <path>
+              <item name="angularserver" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ideaWorksapces" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="angularserver" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ideaWorksapces" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="kjw" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="angularserver" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ideaWorksapces" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="kjw" type="462c0819:PsiDirectoryNode" />
+              <item name="config" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="angularserver" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ideaWorksapces" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="kjw" type="462c0819:PsiDirectoryNode" />
+              <item name="controller" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="angularserver" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ideaWorksapces" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="kjw" type="462c0819:PsiDirectoryNode" />
+              <item name="controller" type="462c0819:PsiDirectoryNode" />
+              <item name="exception" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="angularserver" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ideaWorksapces" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="kjw" type="462c0819:PsiDirectoryNode" />
+              <item name="controller" type="462c0819:PsiDirectoryNode" />
+              <item name="sysmanage" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="angularserver" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ideaWorksapces" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="kjw" type="462c0819:PsiDirectoryNode" />
+              <item name="exception" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="angularserver" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ideaWorksapces" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="kjw" type="462c0819:PsiDirectoryNode" />
+              <item name="security" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="angularserver" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ideaWorksapces" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="angularserver" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ideaWorksapces" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="static" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="angularserver" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ideaWorksapces" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+            </path>
+            <path>
+              <item name="angularserver" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ideaWorksapces" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="angularserver" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ideaWorksapces" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="angularserver" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ideaWorksapces" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="kjw" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="Scope" />
+      <pane id="AndroidView" />
+      <pane id="PackagesPane" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RequestMappingsPanelOrder0" value="0" />
+    <property name="RequestMappingsPanelOrder1" value="1" />
+    <property name="RequestMappingsPanelWidth0" value="75" />
+    <property name="RequestMappingsPanelWidth1" value="75" />
+    <property name="SearchEverywhereHistoryKey" value="CustomWebAuthenticationDetails&#9;PSI&#9;JAVA://com.cnsunet.kjw.security.CustomWebAuthenticationDetails&#10;CustomAuthenticationProvider&#9;FILE&#9;file://G:/ideaWorksapces/src/main/java/com/cnsunet/kjw/security/CustomAuthenticationProvider.java&#10;authenticationManager&#9;PSI&#9;JAVA://com.cnsunet.kjw.security.SecurityConfig#authenticationManagerBean&#10;userRe&#9;PSI&#9;JAVA://com.cnsunet.kjw.repository.sysmanage.UserRepository" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="settings.editor.selected.configurable" value="vcs.Git" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="G:\ideaWorksapces\src\main\resources\static\api" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.cnsunet.kjw.controller.exception" />
+      <recent name="com.cnsunet.kjw.config.setting" />
+      <recent name="com.cnsunet.kjw.model" />
+      <recent name="com.cnsunet.kjw.repository" />
+      <recent name="com.example.angularserver.config" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="G:\ideaWorksapces\src\main\resources\static" />
+      <recent name="G:\ideaWorksapces\src\main\java\com\cnsunet\kjw\exception" />
+      <recent name="G:\ideaWorksapces\src\main\java\com\cnsunet\kjw\utils" />
+      <recent name="G:\ideaWorksapces\libs" />
+      <recent name="G:\ideaWorksapces\lib" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="Spring Boot.AngularserverApplication (1)">
+    <configuration default="true" type="Application" factoryName="Application">
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+    </configuration>
+    <configuration name="AngularserverApplicationTests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="angularserver_test" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.cnsunet.kjw.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="com.cnsunet.kjw" />
+      <option name="MAIN_CLASS_NAME" value="com.cnsunet.kjw.AngularserverApplicationTests" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <patterns />
+    </configuration>
+    <configuration name="AngularserverApplicationTests.contextLoads" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="angularserver_test" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.cnsunet.kjw.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="com.cnsunet.kjw" />
+      <option name="MAIN_CLASS_NAME" value="com.cnsunet.kjw.AngularserverApplicationTests" />
+      <option name="METHOD_NAME" value="contextLoads" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <patterns />
+    </configuration>
+    <configuration default="true" type="JUnit" factoryName="JUnit">
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <patterns />
+    </configuration>
+    <configuration name="AngularserverApplication (1)" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="angularserver_main" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.cnsunet.kjw.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.cnsunet.kjw.AngularserverApplication" />
+    </configuration>
+    <configuration name="AngularserverApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="angularserver_main" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.example.angularserver.AngularserverApplication" />
+    </configuration>
+    <configuration default="true" type="TestNG" factoryName="TestNG">
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="SUITE_NAME" />
+      <option name="PACKAGE_NAME" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
+      <option name="GROUP_NAME" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <option name="OUTPUT_DIRECTORY" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <option name="USE_DEFAULT_REPORTERS" value="false" />
+      <option name="PROPERTIES_FILE" />
+      <properties />
+      <listeners />
+    </configuration>
+    <list>
+      <item itemvalue="Spring Boot.AngularserverApplication" />
+      <item itemvalue="Spring Boot.AngularserverApplication (1)" />
+      <item itemvalue="JUnit.AngularserverApplicationTests.contextLoads" />
+      <item itemvalue="JUnit.AngularserverApplicationTests" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Spring Boot.AngularserverApplication (1)" />
+        <item itemvalue="JUnit.AngularserverApplicationTests" />
+        <item itemvalue="JUnit.AngularserverApplicationTests.contextLoads" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="742c9c15-6c79-45d0-ba6c-b19e0dd82939" name="Default" comment="" />
+      <created>1531277694779</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1531277694779</updated>
+      <workItem from="1531277697930" duration="12819000" />
+      <workItem from="1531385822255" duration="71906000" />
+      <workItem from="1531877604404" duration="27508000" />
+      <workItem from="1531963408591" duration="75362000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TestHistory">
+    <history-entry file="AngularserverApplicationTests - 2018.07.19 at 11h 49m 29s.xml">
+      <configuration name="AngularserverApplicationTests" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="AngularserverApplicationTests - 2018.07.19 at 14h 56m 24s.xml">
+      <configuration name="AngularserverApplicationTests" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="AngularserverApplicationTests - 2018.07.19 at 14h 57m 25s.xml">
+      <configuration name="AngularserverApplicationTests" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="AngularserverApplicationTests - 2018.07.19 at 16h 06m 46s.xml">
+      <configuration name="AngularserverApplicationTests" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="AngularserverApplicationTests - 2018.07.19 at 16h 06m 55s.xml">
+      <configuration name="AngularserverApplicationTests" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="AngularserverApplicationTests - 2018.07.19 at 16h 44m 48s.xml">
+      <configuration name="AngularserverApplicationTests" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="AngularserverApplicationTests - 2018.07.20 at 15h 43m 33s.xml">
+      <configuration name="AngularserverApplicationTests" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="AngularserverApplicationTests - 2018.07.20 at 16h 44m 15s.xml">
+      <configuration name="AngularserverApplicationTests" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="AngularserverApplicationTests - 2018.07.20 at 16h 45m 05s.xml">
+      <configuration name="AngularserverApplicationTests" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="AngularserverApplicationTests - 2018.07.23 at 10h 01m 42s.xml">
+      <configuration name="AngularserverApplicationTests" configurationId="JUnit" />
+    </history-entry>
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="187595000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="1592" y="73" width="1616" height="916" extended-state="6" />
+    <layout>
+      <window_info anchor="right" id="Palette" order="4" />
+      <window_info anchor="bottom" id="Event Log" order="14" side_tool="true" />
+      <window_info anchor="right" id="Maven Projects" order="11" />
+      <window_info anchor="bottom" id="Database Changes" order="12" show_stripe_button="false" />
+      <window_info id="Capture Tool" order="7" />
+      <window_info id="Designer" order="2" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="3" sideWeight="0.49805447" visible="true" weight="0.15231362" />
+      <window_info anchor="right" id="Database" order="6" weight="0.10089974" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info anchor="right" id="Ant Build" order="2" weight="0.25" />
+      <window_info id="UI Designer" order="4" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.46624205" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Messages" order="10" weight="0.32738853" />
+      <window_info anchor="right" id="Palette&#9;" order="8" />
+      <window_info id="Image Layers" order="3" />
+      <window_info anchor="bottom" id="Java Enterprise" order="11" />
+      <window_info anchor="right" id="Capture Analysis" order="5" />
+      <window_info anchor="bottom" id="Version Control" order="13" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.28826532" />
+      <window_info anchor="right" id="Coverage" order="0" sideWeight="0.5019455" side_tool="true" weight="0.25" />
+      <window_info anchor="bottom" id="Spring" order="9" weight="0.3299363" />
+      <window_info anchor="bottom" id="Terminal" order="8" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2769923" />
+      <window_info anchor="right" id="Bean Validation" order="10" />
+      <window_info id="Web" order="6" side_tool="true" />
+      <window_info anchor="right" id="Gradle" order="7" weight="0.08676092" />
+      <window_info anchor="right" id="Theme Preview" order="9" />
+      <window_info id="Favorites" order="5" side_tool="true" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="1" type="SLIDING" weight="0.4" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Build" order="7" weight="0.32866243" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32885906" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <option name="time" value="28" />
+    </breakpoint-manager>
+  </component>
+  <component name="antWorkspaceConfiguration">
+    <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
+    <option name="FILTER_TARGETS" value="false" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/cnsunet/kjw/service/sysmanage/IPermissionService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="215">
+          <caret line="37" column="26" lean-forward="true" selection-start-line="37" selection-start-column="26" selection-end-line="37" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/cnsunet/kjw/service/sysmanage/impl/PermissionServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="247">
+          <caret line="55" column="47" selection-start-line="55" selection-start-column="47" selection-end-line="55" selection-end-column="47" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/cnsunet/kjw/repository/sysmanage/PermissionRepository.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="196">
+          <caret line="144" column="74" lean-forward="true" selection-start-line="144" selection-start-column="74" selection-end-line="144" selection-end-column="74" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/cnsunet/kjw/repository/sysmanage/UserRepository.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="91">
+          <caret line="352" column="7" lean-forward="true" selection-start-line="352" selection-start-column="7" selection-end-line="352" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/cnsunet/kjw/service/sysmanage/IMenuService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="133">
+          <caret line="99" column="31" lean-forward="true" selection-start-line="99" selection-start-column="31" selection-end-line="99" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/cnsunet/kjw/service/sysmanage/impl/MenuServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="223">
+          <caret line="110" column="40" selection-start-line="110" selection-start-column="40" selection-end-line="110" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/cnsunet/kjw/model/sysnamager/UserModel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="172">
+          <caret line="13" column="13" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/static/login.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="133">
+          <caret line="7" column="42" lean-forward="true" selection-start-line="7" selection-start-column="42" selection-end-line="7" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework.security/spring-security-web/4.2.7.RELEASE/e884f1d616280556153dae25555c6c51e2786a09/spring-security-web-4.2.7.RELEASE-sources.jar!/org/springframework/security/web/authentication/UsernamePasswordAuthenticationFilter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="139" column="5" lean-forward="true" selection-start-line="136" selection-start-column="4" selection-end-line="139" selection-end-column="5" />
+          <folding>
+            <element signature="e#2594#2595#0" expanded="true" />
+            <element signature="e#2651#2652#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/cnsunet/kjw/security/UrlAccessDecisionManager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="380">
+          <caret line="21" column="10" selection-start-line="21" selection-start-column="10" selection-end-line="21" selection-end-column="10" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#858#859#0" expanded="true" />
+            <element signature="e#886#887#0" expanded="true" />
+            <element signature="e#947#948#0" expanded="true" />
+            <element signature="e#975#976#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/cnsunet/kjw/security/UrlFilterInvocationSecurityMetadataSource.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="76">
+          <caret line="16" column="10" selection-start-line="16" selection-start-column="10" selection-end-line="16" selection-end-column="10" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#652#653#0" expanded="true" />
+            <element signature="e#679#680#0" expanded="true" />
+            <element signature="e#740#741#0" expanded="true" />
+            <element signature="e#809#810#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/cnsunet/kjw/security/CustomSecurityConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="293">
+          <caret line="102" column="98" lean-forward="true" selection-start-line="102" selection-start-column="98" selection-end-line="102" selection-end-column="98" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/cnsunet/kjw/security/CustomLoginFilter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="215">
+          <caret line="129" column="5" lean-forward="true" selection-start-line="129" selection-start-column="5" selection-end-line="129" selection-end-column="5" />
+          <folding>
+            <element signature="e#0#6911#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/static/api/login.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="247">
+          <caret line="13" column="7" lean-forward="true" selection-start-line="13" selection-start-column="7" selection-end-line="13" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/cnsunet/kjw/controller/sysmanage/MenuController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="760">
+          <caret line="51" column="58" selection-start-line="51" selection-start-column="58" selection-end-line="51" selection-end-column="58" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/cnsunet/kjw/repository/sysmanage/MenuRepository.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1520">
+          <caret line="298" lean-forward="true" selection-start-line="298" selection-end-line="298" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/cnsunet/kjw/controller/sysmanage/PermissionController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="266">
+          <caret line="148" column="30" lean-forward="true" selection-start-line="148" selection-start-column="30" selection-end-line="148" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/cnsunet/kjw/config/setting/NspmsDruidSetting.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="114">
+          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/cnsunet/kjw/controller/sysmanage/RoleController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="72">
+          <caret line="193" column="29" selection-start-line="193" selection-start-column="29" selection-end-line="193" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework.security/spring-security-core/5.0.6.RELEASE/770ec2d4130de96a496b28aa4df34dc63b90dde6/spring-security-core-5.0.6.RELEASE-sources.jar!/org/springframework/security/core/Authentication.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="649">
+          <caret line="64" column="68" selection-start-line="64" selection-start-column="68" selection-end-line="64" selection-end-column="68" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework.security/spring-security-core/5.0.6.RELEASE/770ec2d4130de96a496b28aa4df34dc63b90dde6/spring-security-core-5.0.6.RELEASE-sources.jar!/org/springframework/security/authentication/AuthenticationManager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="684">
+          <caret line="57" column="46" selection-start-line="57" selection-start-column="32" selection-end-line="57" selection-end-column="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework.security/spring-security-core/5.0.6.RELEASE/770ec2d4130de96a496b28aa4df34dc63b90dde6/spring-security-core-5.0.6.RELEASE-sources.jar!/org/springframework/security/authentication/UsernamePasswordAuthenticationToken.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="154">
+          <caret line="34" column="69" lean-forward="true" selection-start-line="34" selection-start-column="69" selection-end-line="34" selection-end-column="69" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework.security/spring-security-core/5.0.6.RELEASE/770ec2d4130de96a496b28aa4df34dc63b90dde6/spring-security-core-5.0.6.RELEASE-sources.jar!/org/springframework/security/authentication/AbstractAuthenticationToken.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-93">
+          <caret line="43" column="59" lean-forward="true" selection-start-line="43" selection-start-column="59" selection-end-line="43" selection-end-column="59" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/cnsunet/kjw/exception/ExceptionController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="304">
+          <caret line="21" column="5" lean-forward="true" selection-start-line="21" selection-start-column="5" selection-end-line="21" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/cnsunet/kjw/exception/ForbiddenException.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="152">
+          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/cnsunet/kjw/controller/exception/ExceptionController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="311">
+          <caret line="29" lean-forward="true" selection-start-line="29" selection-end-line="29" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework.security/spring-security-web/4.2.7.RELEASE/e884f1d616280556153dae25555c6c51e2786a09/spring-security-web-4.2.7.RELEASE-sources.jar!/org/springframework/security/web/authentication/AuthenticationFailureHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="142">
+          <caret line="38" column="45" selection-start-line="38" selection-start-column="17" selection-end-line="38" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework.security/spring-security-web/4.2.7.RELEASE/e884f1d616280556153dae25555c6c51e2786a09/spring-security-web-4.2.7.RELEASE-sources.jar!/org/springframework/security/web/authentication/ForwardAuthenticationFailureHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="23">
+          <caret line="38" lean-forward="true" selection-start-line="38" selection-end-line="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework.security/spring-security-web/4.2.7.RELEASE/e884f1d616280556153dae25555c6c51e2786a09/spring-security-web-4.2.7.RELEASE-sources.jar!/org/springframework/security/web/authentication/DelegatingAuthenticationFailureHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="399">
+          <caret line="43" lean-forward="true" selection-start-line="43" selection-end-line="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework.security/spring-security-web/4.2.7.RELEASE/e884f1d616280556153dae25555c6c51e2786a09/spring-security-web-4.2.7.RELEASE-sources.jar!/org/springframework/security/web/authentication/ExceptionMappingAuthenticationFailureHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="418">
+          <caret line="46" column="13" lean-forward="true" selection-start-line="46" selection-start-column="13" selection-end-line="46" selection-end-column="13" />
+          <folding>
+            <element signature="e#1678#1694#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework.security/spring-security-web/4.2.7.RELEASE/e884f1d616280556153dae25555c6c51e2786a09/spring-security-web-4.2.7.RELEASE-sources.jar!/org/springframework/security/web/authentication/SimpleUrlAuthenticationFailureHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="47" column="38" lean-forward="true" selection-start-line="47" selection-start-column="38" selection-end-line="47" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.apache.tomcat.embed/tomcat-embed-core/8.5.31/5ade5e787bcaabb9d088d8e4b22a8edffa43a783/tomcat-embed-core-8.5.31-sources.jar!/javax/servlet/http/HttpSession.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1387">
+          <caret line="67" column="7" lean-forward="true" selection-start-line="67" selection-start-column="7" selection-end-line="67" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/static/error.html">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework.security/spring-security-web/4.2.7.RELEASE/e884f1d616280556153dae25555c6c51e2786a09/spring-security-web-4.2.7.RELEASE-sources.jar!/org/springframework/security/web/AuthenticationEntryPoint.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="12">
+          <caret line="32" column="31" selection-start-line="32" selection-start-column="31" selection-end-line="32" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework.security/spring-security-web/4.2.7.RELEASE/e884f1d616280556153dae25555c6c51e2786a09/spring-security-web-4.2.7.RELEASE-sources.jar!/org/springframework/security/web/authentication/Http403ForbiddenEntryPoint.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="385">
+          <caret line="58" column="78" lean-forward="true" selection-start-line="58" selection-start-column="78" selection-end-line="58" selection-end-column="78" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework.security/spring-security-web/4.2.7.RELEASE/e884f1d616280556153dae25555c6c51e2786a09/spring-security-web-4.2.7.RELEASE-sources.jar!/org/springframework/security/web/authentication/LoginUrlAuthenticationEntryPoint.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1439">
+          <caret line="69" column="48" lean-forward="true" selection-start-line="69" selection-start-column="48" selection-end-line="69" selection-end-column="48" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/cnsunet/kjw/utils/StatusDefine.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="168">
+          <caret line="42" column="16" selection-start-line="42" selection-start-column="16" selection-end-line="42" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/cnsunet/kjw/utils/StatusDefineMessage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="366">
+          <caret line="29" column="43" lean-forward="true" selection-start-line="29" selection-start-column="43" selection-end-line="29" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/cnsunet/kjw/security/CustomAuthenticationDetailsSource.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="19" column="78" lean-forward="true" selection-start-line="19" selection-start-column="78" selection-end-line="19" selection-end-column="78" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/cnsunet/kjw/security/CustomAuthenticationFailHander.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="145">
+          <caret line="14" column="17" lean-forward="true" selection-start-line="14" selection-start-column="17" selection-end-line="14" selection-end-column="17" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/cnsunet/kjw/security/CustomLogoutHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="278">
+          <caret line="17" column="32" lean-forward="true" selection-start-line="17" selection-start-column="32" selection-end-line="17" selection-end-column="32" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/cnsunet/kjw/security/CustomMethodSecurityExpressionHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="26" column="29" selection-start-line="26" selection-start-column="29" selection-end-line="26" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/cnsunet/kjw/security/CustomNotLoginAuthenticationEntryPoint.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="339">
+          <caret line="31" column="19" lean-forward="true" selection-start-line="31" selection-start-column="19" selection-end-line="31" selection-end-column="19" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#6592#6593#0" expanded="true" />
+            <element signature="e#6636#6637#0" expanded="true" />
+            <element signature="e#6676#6677#0" expanded="true" />
+            <element signature="e#6709#6710#0" expanded="true" />
+            <element signature="e#6748#6749#0" expanded="true" />
+            <element signature="e#6783#6784#0" expanded="true" />
+            <element signature="e#6992#6993#0" expanded="true" />
+            <element signature="e#7025#7026#0" expanded="true" />
+            <element signature="e#7252#7253#0" expanded="true" />
+            <element signature="e#7287#7288#0" expanded="true" />
+            <element signature="e#7666#7667#0" expanded="true" />
+            <element signature="e#7710#7711#0" expanded="true" />
+            <element signature="e#7750#7751#0" expanded="true" />
+            <element signature="e#7783#7784#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/cnsunet/kjw/security/CustomPermissionEvaluator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="202">
+          <caret line="25" column="47" lean-forward="true" selection-start-line="25" selection-start-column="47" selection-end-line="25" selection-end-column="47" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/cnsunet/kjw/security/CustomWebAuthenticationDetails.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="318">
+          <caret line="44" column="5" lean-forward="true" selection-start-line="44" selection-start-column="5" selection-end-line="44" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/cnsunet/kjw/security/MethodSecurityConfiguration.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="411">
+          <caret line="28" column="5" lean-forward="true" selection-start-line="28" selection-start-column="5" selection-end-line="28" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/cnsunet/kjw/security/RestAuthenticationAccessDeniedHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="27" column="5" lean-forward="true" selection-start-line="27" selection-start-column="5" selection-end-line="27" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/cnsunet/kjw/security/SecurityConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-361">
+          <caret line="76" column="62" lean-forward="true" selection-start-line="76" selection-start-column="62" selection-end-line="76" selection-end-column="62" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/cnsunet/kjw/controller/sysmanage/UserController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="326">
+          <caret line="176" column="9" lean-forward="true" selection-start-line="176" selection-start-column="9" selection-end-line="176" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/cnsunet/kjw/security/CustomSecurityExpressionRoot.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="192">
+          <caret line="98" column="72" lean-forward="true" selection-start-line="98" selection-start-column="6" selection-end-line="98" selection-end-column="72" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/cnsunet/kjw/security/CustomAuthenticationProvider.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="334">
+          <caret line="49" selection-start-line="49" selection-end-line="49" />
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>
