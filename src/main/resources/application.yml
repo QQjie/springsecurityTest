@@ -1,0 +1,42 @@
+server:
+  port: 80
+  tomcat:
+    uri-encoding: UTF-8
+spring:
+   datasourceflow:
+      driver-class-name: com.mysql.jdbc.Driver
+      url: jdbc:mysql://192.168.2.207:3306/tistone_flow
+      username: webuser
+      password: tistone
+      type: com.alibaba.druid.pool.DruidDataSource
+   datasourcemytest:
+      driver-class-name: com.mysql.jdbc.Driver
+      url: jdbc:mysql://127.0.0.1:3306/youdao
+      username: root
+      password: root
+      type: com.alibaba.druid.pool.DruidDataSource
+   datasourcebase:
+      driver-class-name: com.mysql.jdbc.Driver
+      url: jdbc:mysql://127.0.0.1:3306/tistone_base
+      username: webuser
+      password: tistone
+      type: com.alibaba.druid.pool.DruidDataSource
+   datasourcepm:
+      driver-class-name: com.mysql.jdbc.Driver
+      url: jdbc:mysql://127.0.0.1:3306/tistone_pm
+      username: webuser
+      password: tistone
+      type: com.alibaba.druid.pool.DruidDataSource
+   datasourcenspms:
+      driver-class-name: com.mysql.jdbc.Driver
+      url: jdbc:mysql://127.0.0.1:3306/tistone_nspms
+      username: webuser
+      password: tistone
+      type: com.alibaba.druid.pool.DruidDataSource
+ #  transaction:
+  #     rollback-on-commit-failure: true
+   http:
+     encoding:
+       force: true
+       charset: UTF-8
+       enabled: true
