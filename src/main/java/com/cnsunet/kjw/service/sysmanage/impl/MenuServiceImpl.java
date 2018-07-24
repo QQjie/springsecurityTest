@@ -8,6 +8,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.sql.SQLException;
+import java.util.ArrayList;
 import java.util.List;
 
 /**
@@ -30,7 +31,13 @@ public class MenuServiceImpl implements IMenuService {
      */
     @Override
     public List<MenuModel> getAllMenu() throws DBErrorException {
-        return menuRepository.getAllMenu();
+        List<MenuModel> list=new ArrayList<>();
+        try{
+            list=menuRepository.getAllMenu();
+        }catch(DBErrorException e){
+            throw new DBErrorException("查询全部菜单信息异常");
+        }
+        return list;
     }
 
     /**
@@ -42,18 +49,30 @@ public class MenuServiceImpl implements IMenuService {
      *@Modyfied by
      */
     public MenuModel getMenuByName(String name){
-      return menuRepository.getMenuByName(name);
+        MenuModel menuModel=null;
+        try{
+            menuModel=menuRepository.getMenuByName(name);
+        }catch(DBErrorException e){
+            throw new DBErrorException("根据菜单名字查询菜单信息异常");
+        }
+      return menuModel;
     }
     /**
      *@Author  huangjie
-     *@Description 根据菜单名字查询菜单信息
+     *@Description 根据菜单Id查询菜单信息
      *@Date  2018/7/13 14:16
      *@Param
      *@Return
      *@Modyfied by
      */
     public MenuModel getMenuById(Integer id){
-       return menuRepository.getMenuById(id);
+        MenuModel menuModel=null;
+        try{
+            menuModel=menuRepository.getMenuById(id);
+        }catch(DBErrorException e){
+            throw new DBErrorException("根据菜单id查询菜单信息异常");
+        }
+        return menuModel;
     }
     /**
      *@Author  huangjie
@@ -64,7 +83,13 @@ public class MenuServiceImpl implements IMenuService {
      *@Modyfied by
      */
     public int addMenu(MenuModel menuModel){
-      return menuRepository.addMenu(menuModel);
+        int result=0;
+        try{
+            result= menuRepository.addMenu(menuModel);
+        }catch(DBErrorException e){
+            throw new DBErrorException("添加菜单异常");
+        }
+        return result;
     }
     /**
      *@Author  huangjie
@@ -75,7 +100,13 @@ public class MenuServiceImpl implements IMenuService {
      *@Modyfied by
      */
     public int updateMenu(MenuModel menuModel){
-       return menuRepository.updateMenu(menuModel);
+        int result=0;
+        try{
+            result =menuRepository.updateMenu(menuModel);
+        }catch(DBErrorException e){
+            throw new DBErrorException("修改菜单信息异常");
+        }
+        return result;
     }
     /**
      *@Author  huangjie
@@ -86,7 +117,13 @@ public class MenuServiceImpl implements IMenuService {
      *@Modyfied by
      */
     public int deleteMenu(Integer id){
-       return menuRepository.deleteMenu(id);
+        int result=0;
+        try{
+            result =menuRepository.deleteMenu(id);
+        }catch(DBErrorException e){
+            throw new DBErrorException("删除菜单异常");
+        }
+       return result;
     }
     /**
      *@Author  huangjie
@@ -97,7 +134,13 @@ public class MenuServiceImpl implements IMenuService {
      *@Modyfied by
      */
     public List<MenuModel> getChildrenMenu(int id){
-        return menuRepository.getChildrenMenu(id);
+        List<MenuModel> list=new ArrayList<>();
+        try{
+            list=menuRepository.getChildrenMenu(id);
+        }catch(DBErrorException e){
+            throw new DBErrorException("查询当前菜单下的所有第一级子菜单异常");
+        }
+        return list;
     }
     /**
      *@Author  huangjie
@@ -108,7 +151,13 @@ public class MenuServiceImpl implements IMenuService {
      *@Modyfied by
      */
     public List<MenuModel> getMenuByUserId(Integer userid) throws DBErrorException{
-        return menuRepository.getMenuByUserId(userid);
+        List<MenuModel> list=new ArrayList<>();
+        try{
+            list=menuRepository.getMenuByUserId(userid);
+        }catch(DBErrorException e){
+            throw new DBErrorException("根据用户id查询所拥有权限的菜单列表异常");
+        }
+        return list;
     }
     /**
      *@Author  huangjie
@@ -119,7 +168,13 @@ public class MenuServiceImpl implements IMenuService {
      *@Modyfied by
      */
     public List<MenuModel> getMenuByUserName(String userName) throws DBErrorException{
-        return menuRepository.getMenuByUserName(userName);
+        List<MenuModel> list=new ArrayList<>();
+        try{
+            list=menuRepository.getMenuByUserName(userName);
+        }catch(DBErrorException e){
+            throw new DBErrorException("根据用户名称查询所拥有权限的菜单列表异常");
+        }
+        return list;
     }
     /**
      *@Author  huangjie
@@ -129,8 +184,32 @@ public class MenuServiceImpl implements IMenuService {
      *@Return
      *@Modyfied by
      */
-    public int updatePmsForRole(Integer roleId,List<Integer> menus) throws DBErrorException{
-        return menuRepository.updatePmsForRole(roleId,menus);
+    public int updateMenusForRole(Integer roleId,List<Integer> menus) throws DBErrorException{
+        int result=0;
+        try{
+            result =menuRepository.updateMenuForRole(roleId,menus);
+        }catch(DBErrorException e){
+            throw new DBErrorException("删除菜单异常");
+        }
+        return result;
+    }
+
+    /**
+     *@Author  huangjie
+     *@Description 给角色添加或修改菜单列表
+     *@Date  2018/7/19 15:37
+     *@Param
+     *@Return
+     *@Modyfied by
+     */
+    public int updateMenusForUser(Integer userId,List<Integer> menus) throws DBErrorException{
+        int result=0;
+        try{
+            result =menuRepository.updateMenuForUser(userId,menus);
+        }catch(DBErrorException e){
+            throw new DBErrorException("给角色添加或修改菜单列表异常");
+        }
+        return result;
     }
 
 }

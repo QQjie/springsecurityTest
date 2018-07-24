@@ -4,6 +4,7 @@ import com.cnsunet.kjw.exception.DBErrorException;
 import com.cnsunet.kjw.model.sysnamager.PermissionModel;
 
 import java.util.List;
+import java.util.Map;
 
 /**
  * @Author: huangjie
@@ -52,6 +53,16 @@ public interface IPermissionService {
      *@Modyfied by
      */
     public int updatePmsOperate(Integer permId,List<Integer> operIds);
+
+    /**
+     *@Author  huangjie
+     *@Description 给用户增加或修改独特的权限操作选项
+     *@Date  2018/7/18 17:41
+     *@Param
+     *@Return
+     *@Modyfied by
+     */
+    public int updatePmsOperateForU(Integer userId,Map<Integer,List<Integer>> map);
 
     /**
      *@Author  huangjie

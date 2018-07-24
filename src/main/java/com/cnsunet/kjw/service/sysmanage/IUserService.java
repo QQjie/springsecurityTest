@@ -65,6 +65,25 @@ public interface IUserService {
 
     /**
      *@Author  huangjie
+     *@Description 查询所有用户信息
+     *@Date  2018/7/18 9:46
+     *@Param  UserMode
+     *@Return  删除用户Id
+     *@Modyfied by
+     */
+    public List<UserModel> getAllUser() throws DBErrorException;
+    /**
+     *@Author  huangjie
+     *@Description 查询该用户所创建的所有用户信息
+     *@Date  2018/7/17 15:03
+     *@Param
+     *@Return
+     *@Modyfied by
+     */
+    public List<UserModel> getAllUserByCreatUser(Integer createId) throws DBErrorException;
+
+    /**
+     *@Author  huangjie
      *@Description 查询认证登陆当前的用户所拥有的权限操作
      *@Date  2018/7/17 14:27
      *@Param

@@ -10,6 +10,7 @@ import org.springframework.stereotype.Service;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Map;
 
 /**
  * @Author: huangjie
@@ -90,6 +91,24 @@ public class PermissionServiceImpl implements IPermissionService {
             result=permissionRepository.updatePmsOperate(permId,operIds);
         }catch(Exception e){
             throw new DBErrorException("给权限修改操作选项失败");
+        }
+        return result;
+    }
+
+    /**
+     *@Author  huangjie
+     *@Description 给用户增加或修改独特的权限操作选项
+     *@Date  2018/7/18 17:41
+     *@Param
+     *@Return
+     *@Modyfied by
+     */
+    public int updatePmsOperateForU(Integer userId,Map<Integer,List<Integer>> map){
+        int result=0;
+        try{
+            result=permissionRepository.updatePmsOperateForU(userId,map);
+        }catch(Exception e){
+            throw new DBErrorException("给用户增加或修改独特的权限操作选项失败");
         }
         return result;
     }

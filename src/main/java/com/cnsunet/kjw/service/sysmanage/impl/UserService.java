@@ -59,7 +59,7 @@ public class UserService implements IUserService {
         try {
             result= userRepository.addUser(userModel);
         }catch (Exception e){
-            throw new DBErrorException("用户添加失败");
+            throw new DBErrorException("用户添加异常");
         }
         return result;
     }
@@ -100,6 +100,41 @@ public class UserService implements IUserService {
     }
     /**
      *@Author  huangjie
+     *@Description 查询所有用户信息
+     *@Date  2018/7/18 9:46
+     *@Param  UserMode
+     *@Return  删除用户Id
+     *@Modyfied by
+     */
+    public List<UserModel> getAllUser() throws DBErrorException{
+        List<UserModel> result=null;
+        try{
+            result=userRepository.getAllUser();
+        }catch(Exception e){
+            throw new DBErrorException("查询所有用户信息异常");
+        }
+        return result;
+    }
+    /**
+     *@Author  huangjie
+     *@Description 查询该用户所创建的所有用户信息
+     *@Date  2018/7/17 15:03
+     *@Param
+     *@Return
+     *@Modyfied by
+     */
+    public List<UserModel> getAllUserByCreatUser(Integer createId) throws DBErrorException{
+        List<UserModel> result=null;
+        try{
+            result=userRepository.getAllUserByCreateUser(createId);
+        }catch(Exception e){
+            e.printStackTrace();
+            throw new DBErrorException("查询该用户所创建的所有用户信息异常");
+        }
+        return result;
+    }
+    /**
+     *@Author  huangjie
      *@Description 查询认证登陆当前的用户所拥有的权限操作
      *@Date  2018/7/17 14:27
      *@Param
@@ -111,7 +146,7 @@ public class UserService implements IUserService {
         try{
             result=userRepository.getUserPermAndOper(userName);
         }catch(Exception e){
-            throw new DBErrorException("查询认证登陆当前的用户所拥有的权限操作失败");
+            throw new DBErrorException("查询认证登陆当前的用户所拥有的权限操作异常");
         }
         return result;
     }
@@ -128,7 +163,7 @@ public class UserService implements IUserService {
         try{
             result=userRepository.getUserPermAndOper(userId);
         }catch(Exception e){
-            throw new DBErrorException("根据用户Id查询用户所拥有的权限操作失败");
+            throw new DBErrorException("根据用户Id查询用户所拥有的权限操作异常");
         }
         return result;
     }

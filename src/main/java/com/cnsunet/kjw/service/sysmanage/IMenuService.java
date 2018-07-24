@@ -103,7 +103,16 @@ public interface IMenuService {
      *@Return
      *@Modyfied by
      */
-    public int updatePmsForRole(Integer roleId,List<Integer> menus) throws DBErrorException;
+    public int updateMenusForRole(Integer roleId,List<Integer> menus) throws DBErrorException;
 
 
+    /**
+     *@Author  huangjie
+     *@Description 给角色添加或修改菜单列表
+     *@Date  2018/7/19 15:37
+     *@Param
+     *@Return
+     *@Modyfied by
+     */
+    public int updateMenusForUser(Integer userId,List<Integer> menus) throws DBErrorException;
 }
