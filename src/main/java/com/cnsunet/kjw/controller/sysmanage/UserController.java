@@ -50,8 +50,8 @@ public class UserController /*extends AbstractAuthenticationProcessingFilter*/ {
     @Autowired
     private CustomAuthenticationDetailsSource customAuthenticationDetailsSource;
 
-    @RequestMapping(value = "/api/user11112222111",method = RequestMethod.GET)
-    @ApiOperation(value = "",response = String.class,httpMethod = "GET",notes = "")
+    @RequestMapping(value = "/api/user11111",method = RequestMethod.GET)
+    @ApiOperation(value = "",response = String.class,httpMethod = "GETwwwwwwssfwfwefwefwefwsffwefweff吩咐我s",notes = "")
     public String getUserById(
             @ApiParam(value = "用户Id",required = true) @RequestParam(value = "id",required = true) String id
     ){

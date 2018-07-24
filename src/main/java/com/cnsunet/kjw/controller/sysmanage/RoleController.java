@@ -41,7 +41,7 @@ public class RoleController {
      * @Modyfied by
      */
     @PreAuthorize("hasRoleAddPms() || hasAnyRole('SADMIN')")
-    @RequestMapping(value = "/api/role",method = RequestMethod.POST)
+    @RequestMapping(value = "/api/roletttt",method = RequestMethod.POST)
     @ApiOperation(value ="添加角色",response = String.class,httpMethod = "POST",notes="添加角色-供管理员添加角色使用需要权限")
     public String addRole(
             @ApiParam(value = "角色名称",required = true ) @RequestParam(value = "roleName" ,required = true) String roleName,
