@@ -20,6 +20,7 @@ import java.sql.PreparedStatement;
 import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Map;
 
 /**
  * @Author: huangjie
@@ -267,6 +268,63 @@ public class PermissionRepository {
          });
          return result;
      }
+
+    /**
+     *@Author  huangjie
+     *@Description 删除用户独特的权限拥有操作
+     *@Date  2018/7/19 10:51
+     *@Param
+     *@Return
+     *@Modyfied by
+     */
+    public int deleteOperAndPemsForU(Integer userId){
+        String sql="update user_permission set status=? where userId=?";
+        logger.info(sql);
+        int result=jdbcTemplate.update(new PreparedStatementCreator() {
+            @Override
+            public PreparedStatement createPreparedStatement(Connection con) throws SQLException {
+                PreparedStatement ps=con.prepareStatement(sql);
+                ps.setInt(1,ConstDefine.STATE_DELETE);
+                ps.setInt(2,userId);
+                return ps;
+            }
+        });
+        return result;
+    }
+    /**
+     *@Author  huangjie
+     *@Description 给用户增加或修改独特的权限操作选项
+     *@Date  2018/7/18 17:41
+     *@Param
+     *@Return
+     *@Modyfied by
+     */
+    public int updatePmsOperateForU(Integer userId,Map<Integer,List<Integer>> map){
+        int result=0;
+        //删除旧的
+        this.deleteOperAndPemsForU(userId);
+        for(Map.Entry<Integer,List<Integer>> entry : map.entrySet()){
+            Integer permId=entry.getKey();
+            List<Integer> operIds=entry.getValue();
+            String sql ="insert into user_permission(userid,permId,operId,status) values(?,?,?,?) on DUPLICATE KEY update status=values(status)";
+            logger.info(sql);
+            jdbcTemplate.batchUpdate(sql, new BatchPreparedStatementSetter() {
+                @Override
+                public void setValues(PreparedStatement ps, int i) throws SQLException {
+                    ps.setInt(1,userId);
+                    ps.setInt(2,permId);
+                    ps.setInt(3,operIds.get(i));
+                    ps.setInt(4,ConstDefine.STATE_ABLE);
+                }
+                @Override
+                public int getBatchSize() {
+                    return operIds.size();
+                }
+            });
+            result += operIds.size();
+        }
+        return result;
+    }
 
     /**
      *@Author  huangjie

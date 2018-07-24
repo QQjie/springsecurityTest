@@ -114,7 +114,7 @@ public class MenuRepository {
       *@Modyfied by
       */
       public int updateMenu(MenuModel menuModel){
-          String sql="updae menu set menuName=?,menuUrl=? where id=?";
+          String sql="update menu set menuName=?,menuUrl=? where id=?";
           logger.info(sql);
           int result=jdbcTemplate.update(new PreparedStatementCreator() {
               @Override
@@ -137,7 +137,7 @@ public class MenuRepository {
        *@Modyfied by
        */
       public int deleteMenu(Integer id){
-          String sql="update mune set status=? where id=?";
+          String sql="update menu set status=? where id=?";
           logger.info(sql);
           return jdbcTemplate.update(sql,new Object[]{ConstDefine.STATE_DELETE,id});
       }
@@ -270,13 +270,36 @@ public class MenuRepository {
 
     /**
      *@Author  huangjie
+     *@Description 删除用户所特有的所有的菜单列表
+     *@Date  2018/7/19 15:38
+     *@Param
+     *@Return
+     *@Modyfied by
+     */
+    public int deleteMenuByUserId(Integer userId){
+        String sql="update user_menu set status=? where userId=?";
+        logger.info(sql);
+        int result=jdbcTemplate.update(new PreparedStatementCreator() {
+            @Override
+            public PreparedStatement createPreparedStatement(Connection con) throws SQLException {
+                PreparedStatement ps=con.prepareStatement(sql);
+                ps.setInt(1,ConstDefine.STATE_DELETE);
+                ps.setInt(2,userId);
+                return ps;
+            }
+        });
+        return result;
+    }
+
+    /**
+     *@Author  huangjie
      *@Description 给角色添加或修改菜单列表
      *@Date  2018/7/19 15:37
      *@Param
      *@Return
      *@Modyfied by
      */
-    public int updatePmsForRole(Integer roleId,List<Integer> menus){
+    public int updateMenuForRole(Integer roleId,List<Integer> menus){
         //删除旧的
         this.deleteMenuByRoleId(roleId);
         String sql ="insert into role_menu(roleId,menuId,status) values(?,?,?) on DUPLICATE KEY update status=values(status)";
@@ -285,6 +308,34 @@ public class MenuRepository {
             @Override
             public void setValues(PreparedStatement ps, int i) throws SQLException {
                 ps.setInt(1,roleId);
+                ps.setInt(2,menus.get(i));
+                ps.setInt(3,ConstDefine.STATE_ABLE);
+            }
+            @Override
+            public int getBatchSize() {
+                return menus.size();
+            }
+        });
+        return menus.size();
+    }
+
+    /**
+     *@Author  huangjie
+     *@Description 给用户添加或修改菜单列表
+     *@Date  2018/7/19 15:37
+     *@Param
+     *@Return
+     *@Modyfied by
+     */
+    public int updateMenuForUser(Integer userId,List<Integer> menus){
+        //删除旧的
+        this.deleteMenuByUserId(userId);
+        String sql ="insert into user_menu(userId,menuId,status) values(?,?,?) on DUPLICATE KEY update status=values(status)";
+        logger.info(sql);
+        jdbcTemplate.batchUpdate(sql, new BatchPreparedStatementSetter() {
+            @Override
+            public void setValues(PreparedStatement ps, int i) throws SQLException {
+                ps.setInt(1,userId);
                 ps.setInt(2,menus.get(i));
                 ps.setInt(3,ConstDefine.STATE_ABLE);
             }

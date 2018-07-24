@@ -109,6 +109,20 @@ public class UserRepository {
         List<UserModel> list=jdbcTemplate.query(sql,new Object[]{ConstDefine.STATE_ABLE},UserModel.UserModelMapper.INSTANCE);
         return list;
     }
+
+    /**
+     *@Author  huangjie
+     *@Description 查询该用户所创建的所有用户信息
+     *@Date  2018/7/17 15:03
+     *@Param
+     *@Return
+     *@Modyfied by
+     */
+    public List<UserModel> getAllUserByCreateUser(Integer createId){
+        String sql="select * from user_info where createUser=? and status=?";
+        List<UserModel> list=jdbcTemplate.query(sql,new Object[]{createId,ConstDefine.STATE_ABLE},UserModel.UserModelMapper.INSTANCE);
+        return list;
+    }
     /**
      *@Author  huangjie
      *@Description 新增用户
