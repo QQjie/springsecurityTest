@@ -216,4 +216,39 @@ public class PermissionServiceImpl implements IPermissionService {
         return result;
     }
 
+    /**
+     *@Author  huangjie
+     *@Description 根据权限id查询权限信息
+     *@Date  2018/7/13 15:10
+     *@Param
+     *@Return
+     *@Modyfied by
+     */
+    public PermissionModel getPermissionByid(Integer id){
+        PermissionModel permissionModel=null;
+        try{
+            permissionModel=permissionRepository.getPermissionById(id);
+        }catch(Exception e){
+            throw new DBErrorException("根据权限id查询权限信息失败");
+        }
+        return permissionModel;
+    }
+    /**
+     *@Author  huangjie
+     *@Description 根据权限名称查询权限信息
+     *@Date  2018/7/13 15:10
+     *@Param
+     *@Return
+     *@Modyfied by
+     */
+    public PermissionModel getPermissionByName(String name){
+        PermissionModel permissionModel=null;
+        try{
+            permissionModel=permissionRepository.getPermissionByName(name);
+        }catch(Exception e){
+            throw new DBErrorException("根据权限名称查询权限信息失败");
+        }
+        return permissionModel;
+    }
+
 }

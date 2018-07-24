@@ -45,7 +45,7 @@ public interface IPermissionService {
 
     /**
      *@Author  huangjie
-     *@Description 给权限修改操作选项
+     *@Description 给权限增加或修改操作选项
      *@Date  2018/7/18 17:41
      *@Param
      *@Return
@@ -112,5 +112,24 @@ public interface IPermissionService {
      *@Modyfied by
      */
     public List<PermissionModel> getAuthPmsById(Integer id);
+
+    /**
+     *@Author  huangjie
+     *@Description 根据权限id查询权限信息
+     *@Date  2018/7/13 15:10
+     *@Param
+     *@Return
+     *@Modyfied by
+     */
+    public PermissionModel getPermissionByid(Integer id);
+    /**
+     *@Author  huangjie
+     *@Description 根据权限名称查询权限信息
+     *@Date  2018/7/13 15:10
+     *@Param
+     *@Return
+     *@Modyfied by
+     */
+    public PermissionModel getPermissionByName(String name);
 
 }
