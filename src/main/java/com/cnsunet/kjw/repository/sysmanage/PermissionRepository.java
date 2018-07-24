@@ -55,7 +55,7 @@ public class PermissionRepository {
             public PreparedStatement createPreparedStatement(Connection con) throws SQLException {
                 PreparedStatement ps=con.prepareStatement(sql);
                 ps.setString(1,permissionModel.getPerssionName());
-                ps.setInt(2,permissionModel.getStatus());
+                ps.setInt(2,ConstDefine.STATE_ABLE);
                 return ps;
             }
         },key);
@@ -75,6 +75,42 @@ public class PermissionRepository {
         List<PermissionModel> list=jdbcTemplate.query(sql,new Object[]{ConstDefine.STATE_ABLE},PermissionModel
                 .PermissionMapper.INSTANCE);
         return list;
+    }
+    /**
+     *@Author  huangjie
+     *@Description 根据权限id查询权限信息
+     *@Date  2018/7/13 15:10
+     *@Param
+     *@Return
+     *@Modyfied by
+     */
+    public PermissionModel getPermissionById(Integer id){
+        String sql ="select id,permissionName,status from permission where id=? status=?";
+        logger.info(sql);
+        List<PermissionModel> list=jdbcTemplate.query(sql,new Object[]{id,ConstDefine.STATE_ABLE},PermissionModel
+                .PermissionMapper.INSTANCE);
+        if(list==null||list.size()==0){
+            return null;
+        }
+        return list.get(0);
+    }
+    /**
+     *@Author  huangjie
+     *@Description 根据权限名称查询权限信息
+     *@Date  2018/7/13 15:10
+     *@Param
+     *@Return
+     *@Modyfied by
+     */
+    public PermissionModel getPermissionByName(String name){
+        String sql ="select id,permissionName,status from permission where permissionName=? status=?";
+        logger.info(sql);
+        List<PermissionModel> list=jdbcTemplate.query(sql,new Object[]{name,ConstDefine.STATE_ABLE},PermissionModel
+                .PermissionMapper.INSTANCE);
+        if(list==null||list.size()==0){
+            return null;
+        }
+        return list.get(0);
     }
     /**
      *@Author  huangjie
@@ -234,7 +270,7 @@ public class PermissionRepository {
 
     /**
      *@Author  huangjie
-     *@Description 给权限修改操作选项
+     *@Description 给权限增加或修改操作选项
      *@Date  2018/7/18 17:41
      *@Param
      *@Return
