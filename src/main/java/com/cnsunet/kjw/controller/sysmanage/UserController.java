@@ -32,6 +32,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 import java.io.IOException;
+import java.util.List;
 
 /**
  * @Author: huangjie
@@ -234,6 +235,59 @@ public class UserController /*extends AbstractAuthenticationProcessingFilter*/ {
         }catch (Exception e){
             //抛出异常返回异常信息
             logger.error("controller:UserController. function:deleteUser..msg:PUT  Exception. error:"+e.getMessage());
+            return new JsonResponseData(false, StatusDefineMessage.GetMessage(StatusDefine.SYS_ERROR), StatusDefine.SYS_ERROR, "", null).toString();
+        }
+    }
+
+    /**
+     * @Author  huangjie
+     * 描述 获取所有用户信息
+     * HTTP方式  GET
+     * API路径   /api/userAll
+     * 方法名  getAllUser
+     * 方法异常 DBErrorException  Exception
+     * @Modyfied by
+     */
+    @RequestMapping(value = "/api/userAll",method = RequestMethod.GET)
+    @ApiOperation(value ="获取所有用户信息",response = String.class,httpMethod = "GET",notes="获取所有用户信息-供管理员使用")
+    public String getAllUser(){
+        try {
+            List<UserModel> result=userService.getAllUser();
+            return new JsonResponseData(true, StatusDefineMessage.GetMessage(StatusDefine.SUCCESS), StatusDefine.SUCCESS, "获取所有用户信息成功", result).toString();
+        }catch (DBErrorException e){
+            //抛出异常返回异常信息
+            logger.error("controller:UserController. function:getAllUser..msg:PUT  DBErrorException. error:"+e.getMessage());
+            return new JsonResponseData(false, StatusDefineMessage.GetMessage(StatusDefine.DB_ERROR), StatusDefine.DB_ERROR, "", null).toString();
+        }catch (Exception e){
+            //抛出异常返回异常信息
+            logger.error("controller:UserController. function:getAllUser..msg:PUT  Exception. error:"+e.getMessage());
+            return new JsonResponseData(false, StatusDefineMessage.GetMessage(StatusDefine.SYS_ERROR), StatusDefine.SYS_ERROR, "", null).toString();
+        }
+    }
+    /**
+     * @Author  huangjie
+     * 描述 根据用户id获取该用户所创建的所有用户的信息
+     * HTTP方式  GET
+     * API路径   /api/userAllFroCreator
+     * 方法名  getAllUser
+     * 方法异常 DBErrorException  Exception
+     * @Modyfied by
+     */
+    @RequestMapping(value = "/api/userAllFroCreator",method = RequestMethod.GET)
+    @ApiOperation(value ="根据用户id获取该用户所创建的所有用户的信息",response = String.class,httpMethod = "GET",notes="根据用户id获取该用户所创建的所有用户的信息-供web登陆者使用需权限")
+    public String getAllUserForCreator(
+            @ApiParam(value = "创建者ID",required = true ) @RequestParam(value = "createId" ,required = true) String createId
+    ){
+        try {
+            List<UserModel> result=userService.getAllUserByCreatUser(Integer.valueOf(createId));
+            return new JsonResponseData(true, StatusDefineMessage.GetMessage(StatusDefine.SUCCESS), StatusDefine.SUCCESS, "根据用户id获取该用户所创建的所有用户成功", result).toString();
+        }catch (DBErrorException e){
+            //抛出异常返回异常信息
+            logger.error("controller:UserController. function:getAllUserForCreator..msg:PUT  DBErrorException. error:"+e.getMessage());
+            return new JsonResponseData(false, StatusDefineMessage.GetMessage(StatusDefine.DB_ERROR), StatusDefine.DB_ERROR, "", null).toString();
+        }catch (Exception e){
+            //抛出异常返回异常信息
+            logger.error("controller:UserController. function:getAllUserForCreator..msg:PUT  Exception. error:"+e.getMessage());
             return new JsonResponseData(false, StatusDefineMessage.GetMessage(StatusDefine.SYS_ERROR), StatusDefine.SYS_ERROR, "", null).toString();
         }
     }

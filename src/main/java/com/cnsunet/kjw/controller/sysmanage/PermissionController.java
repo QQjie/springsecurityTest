@@ -9,6 +9,7 @@ import com.cnsunet.kjw.utils.StatusDefineMessage;
 import com.cnsunet.kjw.utils.json.JsonResponseData;
 import io.swagger.annotations.ApiOperation;
 import io.swagger.annotations.ApiParam;
+import io.swagger.models.auth.In;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -19,6 +20,8 @@ import org.springframework.web.bind.annotation.RestController;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Map;
+import java.util.TreeMap;
 
 /**
  * @Author: huangjie
@@ -116,11 +119,52 @@ public class PermissionController {
             return new JsonResponseData(true, StatusDefineMessage.GetMessage(StatusDefine.SUCCESS), StatusDefine.SUCCESS, "根据用户Id的所有权限列表成功", result).toString();
         }catch(DBErrorException e){
             //抛出异常返回异常信息
-            logger.error("controller:PermissionController. function:getAuthPms..msg:GET  DBErrorException. error:"+e.getMessage());
+            logger.error("controller:PermissionController. function:getAuthPms..msg:POST  DBErrorException. error:"+e.getMessage());
             return new JsonResponseData(false, StatusDefineMessage.GetMessage(StatusDefine.DB_ERROR), StatusDefine.DB_ERROR, "", null).toString();
         }catch (Exception e){
             //抛出异常返回异常信息
-            logger.error("controller:PermissionController. function:getAuthPms..msg:GET  Exception. error:"+e.getMessage());
+            logger.error("controller:PermissionController. function:getAuthPms..msg:POST  Exception. error:"+e.getMessage());
+            return new JsonResponseData(false, StatusDefineMessage.GetMessage(StatusDefine.SYS_ERROR), StatusDefine.SYS_ERROR, "", null).toString();
+        }
+    }
+
+    /**
+     * @Author  huangjie
+     * 描述 给用户新增或修改独特的权限操作
+     * HTTP方式  POST
+     * API路径   /api/pmsandoprforu
+     * 方法名  addOrUpdatePmsOprForU
+     * 方法异常
+     * @Modyfied by
+     */
+    @RequestMapping(value = "/api/pmsandoprforu",method = RequestMethod.POST)
+    @ApiOperation(value ="给用户新增或修改独特的权限操作",response = String.class,httpMethod = "POST",notes="给用户新增或修改独特的权限操作")
+    public String addOrUpdatePmsOprForU(
+            @ApiParam(value = "用户id",required = true) @RequestParam(value = "userId" ,required = true) String userId,
+            @ApiParam(value = "权限id与操作数组集合用分号;分开 类似1-1,2,3;2-2,3",required = true) @RequestParam(value = "pmsoprs" ,required = true) String pmsoprs
+    ){
+        Map<Integer,List<Integer>> map=new TreeMap<>();
+
+        String[] arr=pmsoprs.split(";");
+        for (int i = 0; i < arr.length; i++) {
+           Integer pmsId= Integer.valueOf(arr[i].split("-")[0]);
+           String oprs=arr[i].split("-")[1];
+           List<Integer> oprids=new ArrayList<>();
+           String[]  soprs=oprs.split(",");
+           for (int i1 = 0; i1 < soprs.length; i1++) {
+               oprids.add(Integer.valueOf(soprs[i]));
+           }
+        }
+        try{
+            int result=permissionService.updatePmsOperateForU(Integer.valueOf(userId),map);
+            return new JsonResponseData(true, StatusDefineMessage.GetMessage(StatusDefine.SUCCESS), StatusDefine.SUCCESS, "根据用户Id的所有权限列表成功", result).toString();
+        }catch(DBErrorException e){
+            //抛出异常返回异常信息
+            logger.error("controller:PermissionController. function:addOrUpdatePmsOprForU..msg:POST  DBErrorException. error:"+e.getMessage());
+            return new JsonResponseData(false, StatusDefineMessage.GetMessage(StatusDefine.DB_ERROR), StatusDefine.DB_ERROR, "", null).toString();
+        }catch (Exception e){
+            //抛出异常返回异常信息
+            logger.error("controller:PermissionController. function:addOrUpdatePmsOprForU..msg:POST  Exception. error:"+e.getMessage());
             return new JsonResponseData(false, StatusDefineMessage.GetMessage(StatusDefine.SYS_ERROR), StatusDefine.SYS_ERROR, "", null).toString();
         }
     }
