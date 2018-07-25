@@ -1,6 +1,7 @@
 package com.cnsunet.kjw.security;
 
 
+import com.cnsunet.kjw.model.sysnamager.RoleModel;
 import com.cnsunet.kjw.model.sysnamager.UserModel;
 import com.cnsunet.kjw.repository.sysmanage.UserRepository;
 import com.cnsunet.kjw.utils.MD5Util;
@@ -48,10 +49,17 @@ public class CustomAuthenticationProvider implements AuthenticationProvider {
             );
         }
         List<String> list = userRepository.getUserPermAndOper(details.getUserName());
+        List<RoleModel> roles=userRepository.getUserRoleByName(details.getUserName());
         List<GrantedAuthority> authorities =new ArrayList<GrantedAuthority>();
-
+        for (int i = 0; i < roles.size(); i++) {
+            System.out.println("role"+roles.get(i).getRoleName());
+            authorities.add(new SimpleGrantedAuthority("ROLE_"+roles.get(i).getRoleName()));
+        }
         for (int i = 0; i < list.size(); i++) {
             authorities.add(new SimpleGrantedAuthority(list.get(i)));
+        }
+        for (int i = 0; i < authorities.size(); i++) {
+            System.out.println(authorities.get(i));
         }
       /*  if(userModel.getUserName().equals("hj")){
             authorities.add(new SimpleGrantedAuthority("ROLE_ADMIN"));

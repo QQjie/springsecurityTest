@@ -1,11 +1,13 @@
 package com.cnsunet.kjw.security;
 
+import com.cnsunet.kjw.model.sysnamager.RoleModel;
 import com.cnsunet.kjw.model.sysnamager.UserModel;
 import com.cnsunet.kjw.repository.sysmanage.RoleRepository;
 import com.cnsunet.kjw.repository.sysmanage.UserRepository;
 import com.cnsunet.kjw.service.sysmanage.IUserService;
 import com.cnsunet.kjw.utils.page.OperateConst;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.security.access.AccessDeniedException;
 import org.springframework.security.access.PermissionEvaluator;
 import org.springframework.security.access.expression.method.MethodSecurityExpressionOperations;
 import org.springframework.security.access.hierarchicalroles.RoleHierarchy;
@@ -83,6 +85,31 @@ public class CustomSecurityExpressionRoot implements MethodSecurityExpressionOpe
         for (GrantedAuthority authority : authentication.getAuthorities()) {
             if (authority.getAuthority().equals(privilege)) return true;
         }
+        return false;
+    }
+    /**
+     *@Author  huangjie
+     *@Description SADMIN权限
+     *@Date  2018/7/18 10:04
+     *@Param
+     *@Return
+     *@Modyfied by
+     */
+    public boolean hasSadmin(){
+        CustomWebAuthenticationDetails customWebAuthenticationDetails=(CustomWebAuthenticationDetails)authentication.getDetails();
+        String userName=customWebAuthenticationDetails.getUserName();
+        System.out.println(userName);
+        try{
+            List<RoleModel> list = userRepository.getUserRoleByName(userName);
+            for (int i = 0; i < list.size(); i++) {
+                if (list.get(i).getRoleName().equals("SADMIN")) {
+                    return true;
+                }
+            }
+        }catch(Exception e){
+            throw  new AccessDeniedException("未授权");
+        }
+
         return false;
     }
     /**
@@ -227,7 +254,190 @@ public class CustomSecurityExpressionRoot implements MethodSecurityExpressionOpe
         }
         return false;
     }
-    
+    /**
+     *@Author  huangjie
+     *@Description 自定义权限查询权限
+     *@Date  2018/7/25 14:32
+     *@Param
+     *@Return
+     *@Modyfied by
+     */
+    public boolean hasPmsSelectPms(){
+        CustomWebAuthenticationDetails customWebAuthenticationDetails=(CustomWebAuthenticationDetails)authentication.getDetails();
+        String userName=customWebAuthenticationDetails.getUserName();
+        List<String> list = userRepository.getUserPermAndOper(userName);
+        for (int i = 0; i < list.size(); i++) {
+            String[] arr=list.get(i).split("-");
+            if (arr[0].equals("权限管理权限")&&((Integer.valueOf(arr[1])&OperateConst.GET)>=OperateConst.GET)) {
+                return true;
+            }
+        }
+        return false;
+    }
+    /**
+     *@Author  huangjie
+     *@Description 自定义权限新增权限
+     *@Date  2018/7/25 14:32
+     *@Param
+     *@Return
+     *@Modyfied by
+     */
+    public boolean hasPmsAddPms(){
+        CustomWebAuthenticationDetails customWebAuthenticationDetails=(CustomWebAuthenticationDetails)authentication.getDetails();
+        String userName=customWebAuthenticationDetails.getUserName();
+        List<String> list = userRepository.getUserPermAndOper(userName);
+        for (int i = 0; i < list.size(); i++) {
+            String[] arr=list.get(i).split("-");
+            if (arr[0].equals("权限管理权限")&&((Integer.valueOf(arr[1])&OperateConst.POST)>=OperateConst.POST)) {
+                return true;
+            }
+        }
+        return false;
+    }
+    /**
+     *@Author  huangjie
+     *@Description 自定义权限修改权限
+     *@Date  2018/7/25 14:32
+     *@Param
+     *@Return
+     *@Modyfied by
+     */
+    public boolean hasPmsUpdatePms(){
+        CustomWebAuthenticationDetails customWebAuthenticationDetails=(CustomWebAuthenticationDetails)authentication.getDetails();
+        String userName=customWebAuthenticationDetails.getUserName();
+        List<String> list = userRepository.getUserPermAndOper(userName);
+        for (int i = 0; i < list.size(); i++) {
+            String[] arr=list.get(i).split("-");
+            if (arr[0].equals("权限管理权限")&&((Integer.valueOf(arr[1])&OperateConst.PUT)>=OperateConst.PUT)) {
+                return true;
+            }
+        }
+        return false;
+    }
+    /**
+     *@Author  huangjie
+     *@Description 自定义权限删除权限
+     *@Date  2018/7/25 14:32
+     *@Param
+     *@Return
+     *@Modyfied by
+     */
+    public boolean hasPmsDeletePms(){
+        CustomWebAuthenticationDetails customWebAuthenticationDetails=(CustomWebAuthenticationDetails)authentication.getDetails();
+        String userName=customWebAuthenticationDetails.getUserName();
+        List<String> list = userRepository.getUserPermAndOper(userName);
+        for (int i = 0; i < list.size(); i++) {
+            String[] arr=list.get(i).split("-");
+            if (arr[0].equals("权限管理权限")&&((Integer.valueOf(arr[1])&OperateConst.DELETE)>=OperateConst.DELETE)) {
+                return true;
+            }
+        }
+        return false;
+    }
+
+
+    /**
+     *@Author  huangjie
+     *@Description 自定义菜单查询权限
+     *@Date  2018/7/25 14:32
+     *@Param
+     *@Return
+     *@Modyfied by
+     */
+    public boolean hasPMenuSelectPms(){
+        CustomWebAuthenticationDetails customWebAuthenticationDetails=(CustomWebAuthenticationDetails)authentication.getDetails();
+        String userName=customWebAuthenticationDetails.getUserName();
+        List<String> list = userRepository.getUserPermAndOper(userName);
+        for (int i = 0; i < list.size(); i++) {
+            String[] arr=list.get(i).split("-");
+            if (arr[0].equals("菜单管理权限")&&((Integer.valueOf(arr[1])&OperateConst.GET)>=OperateConst.GET)) {
+                return true;
+            }
+        }
+        return false;
+    }
+    /**
+     *@Author  huangjie
+     *@Description 自定义菜单新增权限
+     *@Date  2018/7/25 14:32
+     *@Param
+     *@Return
+     *@Modyfied by
+     */
+    public boolean hasMenuAddPms(){
+        CustomWebAuthenticationDetails customWebAuthenticationDetails=(CustomWebAuthenticationDetails)authentication.getDetails();
+        String userName=customWebAuthenticationDetails.getUserName();
+        List<String> list = userRepository.getUserPermAndOper(userName);
+        for (int i = 0; i < list.size(); i++) {
+            String[] arr=list.get(i).split("-");
+            if (arr[0].equals("菜单管理权限")&&((Integer.valueOf(arr[1])&OperateConst.POST)>=OperateConst.POST)) {
+                return true;
+            }
+        }
+        return false;
+    }
+    /**
+     *@Author  huangjie
+     *@Description 自定义菜单修改权限
+     *@Date  2018/7/25 14:32
+     *@Param
+     *@Return
+     *@Modyfied by
+     */
+    public boolean hasMenuUpdatePms(){
+        CustomWebAuthenticationDetails customWebAuthenticationDetails=(CustomWebAuthenticationDetails)authentication.getDetails();
+        String userName=customWebAuthenticationDetails.getUserName();
+        List<String> list = userRepository.getUserPermAndOper(userName);
+        for (int i = 0; i < list.size(); i++) {
+            String[] arr=list.get(i).split("-");
+            if (arr[0].equals("菜单管理权限")&&((Integer.valueOf(arr[1])&OperateConst.PUT)>=OperateConst.PUT)) {
+                return true;
+            }
+        }
+        return false;
+    }
+    /**
+     *@Author  huangjie
+     *@Description 自定义菜单删除权限
+     *@Date  2018/7/25 14:32
+     *@Param
+     *@Return
+     *@Modyfied by
+     */
+    public boolean hasMenuDeletePms(){
+        CustomWebAuthenticationDetails customWebAuthenticationDetails=(CustomWebAuthenticationDetails)authentication.getDetails();
+        String userName=customWebAuthenticationDetails.getUserName();
+        List<String> list = userRepository.getUserPermAndOper(userName);
+        for (int i = 0; i < list.size(); i++) {
+            String[] arr=list.get(i).split("-");
+            if (arr[0].equals("菜单管理权限")&&((Integer.valueOf(arr[1])&OperateConst.DELETE)>=OperateConst.DELETE)) {
+                return true;
+            }
+        }
+        return false;
+    }
+
+
+    /**
+     *@Author  huangjie
+     *@Description 自定义权限限制
+     *@Date  2018/7/25 14:32
+     *@Param String (权限管理) Integer 操作
+     *@Return
+     *@Modyfied by
+     */
+    public boolean hasPms(String pmsName,Integer opr){
+        CustomWebAuthenticationDetails customWebAuthenticationDetails=(CustomWebAuthenticationDetails)authentication.getDetails();
+        String userName=customWebAuthenticationDetails.getUserName();
+        List<String> list = userRepository.getUserPermAndOper(userName);
+        for (int i = 0; i < list.size(); i++) {
+            String[] arr=list.get(i).split("-");
+            if (arr[0].equals(pmsName)&&((Integer.valueOf(arr[1])&opr)>=opr)) {
+                return true;
+            }
+        }
+        return false;
+    }
 
     @Override
     public final boolean hasAuthority(String authority) {
