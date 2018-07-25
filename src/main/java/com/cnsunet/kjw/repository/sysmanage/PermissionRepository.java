@@ -75,6 +75,9 @@ public class PermissionRepository {
         logger.info(sql);
         List<PermissionModel> list=jdbcTemplate.query(sql,new Object[]{ConstDefine.STATE_ABLE},PermissionModel
                 .PermissionMapper.INSTANCE);
+        for (int i = 0; i < list.size(); i++) {
+            System.out.println("ppppp"+list.get(i).getPerssionName());
+        }
         return list;
     }
     /**
@@ -86,7 +89,7 @@ public class PermissionRepository {
      *@Modyfied by
      */
     public PermissionModel getPermissionById(Integer id){
-        String sql ="select id,permissionName,status from permission where id=? status=?";
+        String sql ="select id,permissionName,status from permission where id=? and status=?";
         logger.info(sql);
         List<PermissionModel> list=jdbcTemplate.query(sql,new Object[]{id,ConstDefine.STATE_ABLE},PermissionModel
                 .PermissionMapper.INSTANCE);
@@ -104,7 +107,7 @@ public class PermissionRepository {
      *@Modyfied by
      */
     public PermissionModel getPermissionByName(String name){
-        String sql ="select id,permissionName,status from permission where permissionName=? status=?";
+        String sql ="select id,permissionName,status from permission where permissionName=? and status=?";
         logger.info(sql);
         List<PermissionModel> list=jdbcTemplate.query(sql,new Object[]{name,ConstDefine.STATE_ABLE},PermissionModel
                 .PermissionMapper.INSTANCE);

@@ -23,7 +23,7 @@ public class PermissionModel {
             permissionModel.setId(rs.getInt("id"));
             permissionModel.setPerssionName(rs.getString("permissionName"));
             permissionModel.setStatus(rs.getInt("status"));
-            return null;
+            return permissionModel;
         }
     }
     /**

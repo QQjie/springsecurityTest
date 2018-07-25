@@ -13,6 +13,7 @@ import io.swagger.models.auth.In;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.security.access.prepost.PreAuthorize;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
@@ -47,6 +48,7 @@ public class PermissionController {
      * 方法异常
      * @Modyfied by
      */
+    @PreAuthorize("hasPms('权限管理权限',1)")
     @RequestMapping(value = "/api/authpms",method = RequestMethod.GET)
     @ApiOperation(value ="获取当前登录用户的所有权限列表",response = String.class,httpMethod = "GET",notes="获取当前登录用户的所有权限列表")
     public String getAuthPms(
@@ -75,6 +77,8 @@ public class PermissionController {
      * 方法异常
      * @Modyfied by
      */
+
+    @PreAuthorize("hasPms('权限管理权限',1)")
     @RequestMapping(value = "/api/pmsById",method = RequestMethod.GET)
     @ApiOperation(value ="获取当前登录用户的所有权限列表",response = String.class,httpMethod = "GET",notes="获取当前登录用户的所有权限列表")
     public String getPmsByid(
@@ -103,6 +107,7 @@ public class PermissionController {
      * 方法异常
      * @Modyfied by
      */
+    @PreAuthorize("hasPms('权限管理权限',4)||hasPms('角色管理权限',4)")
     @RequestMapping(value = "/api/pmsforrole",method = RequestMethod.POST)
     @ApiOperation(value ="给角色划分或修改权限",response = String.class,httpMethod = "POST",notes="给角色划分或修改权限")
     public String addOrUpdatePmsByRoleid(
@@ -116,7 +121,7 @@ public class PermissionController {
         }
         try{
             int result=permissionService.grantPmsForRole(Integer.valueOf(roleId),list);
-            return new JsonResponseData(true, StatusDefineMessage.GetMessage(StatusDefine.SUCCESS), StatusDefine.SUCCESS, "根据用户Id的所有权限列表成功", result).toString();
+            return new JsonResponseData(true, StatusDefineMessage.GetMessage(StatusDefine.SUCCESS), StatusDefine.SUCCESS, "给角色划分或修改权限成功", result).toString();
         }catch(DBErrorException e){
             //抛出异常返回异常信息
             logger.error("controller:PermissionController. function:getAuthPms..msg:POST  DBErrorException. error:"+e.getMessage());
@@ -137,6 +142,7 @@ public class PermissionController {
      * 方法异常
      * @Modyfied by
      */
+    @PreAuthorize("hasPms('用户管理权限',4)")
     @RequestMapping(value = "/api/pmsandoprforu",method = RequestMethod.POST)
     @ApiOperation(value ="给用户新增或修改独特的权限操作",response = String.class,httpMethod = "POST",notes="给用户新增或修改独特的权限操作")
     public String addOrUpdatePmsOprForU(
@@ -157,7 +163,7 @@ public class PermissionController {
         }
         try{
             int result=permissionService.updatePmsOperateForU(Integer.valueOf(userId),map);
-            return new JsonResponseData(true, StatusDefineMessage.GetMessage(StatusDefine.SUCCESS), StatusDefine.SUCCESS, "根据用户Id的所有权限列表成功", result).toString();
+            return new JsonResponseData(true, StatusDefineMessage.GetMessage(StatusDefine.SUCCESS), StatusDefine.SUCCESS, "给用户新增或修改独特的权限操作成功", result).toString();
         }catch(DBErrorException e){
             //抛出异常返回异常信息
             logger.error("controller:PermissionController. function:addOrUpdatePmsOprForU..msg:POST  DBErrorException. error:"+e.getMessage());
@@ -178,6 +184,7 @@ public class PermissionController {
      * 方法异常
      * @Modyfied by
      */
+    @PreAuthorize("hasPms('角色管理权限',4)")
     @RequestMapping(value = "/api/pmsforrole",method = RequestMethod.PUT)
     @ApiOperation(value ="删除角色权限",response = String.class,httpMethod = "PUT",notes="删除角色权限")
     public String deletePmsByRoleid(
@@ -211,6 +218,7 @@ public class PermissionController {
      * 方法异常  DBErrorException Exception
      * @Modyfied by
      */
+    @PreAuthorize("hasPms('权限管理权限',4)")
     @RequestMapping(value = "/api/oprforpms",method = RequestMethod.POST)
     @ApiOperation(value = "给权限增加或修改操作权限",response = String.class,httpMethod = "POST",notes = "给权限增加或修改操作权限")
     public String AddOrUpdateOprForPms(
@@ -245,6 +253,7 @@ public class PermissionController {
      * 方法异常  DBErrorException Exception
      * @Modyfied by
      */
+    @PreAuthorize("hasPms('权限管理权限',2)")
      @RequestMapping(value = "/api/permission",method = RequestMethod.POST)
      @ApiOperation(value = "新增权限管理信息",response = String.class,httpMethod = "POST",notes = "新增权限管理信息")
      public String addPermission(
@@ -275,13 +284,16 @@ public class PermissionController {
      * 方法异常  DBErrorException Exception
      * @Modyfied by
      */
+    @PreAuthorize("hasPms('权限管理权限',4)")
     @RequestMapping(value = "/api/permission",method = RequestMethod.PUT)
     @ApiOperation(value = "修改权限管理信息",response = String.class,httpMethod = "PUT",notes = "修改权限管理信息")
     public String updatePermission(
+            @ApiParam(value = "权限ID",required = true)@RequestParam(value = "permissionId",required = true) String permissionId,
             @ApiParam(value = "权限名称",required = true)@RequestParam(value = "permissionName",required = true) String permissionName
     ){
         PermissionModel permissionModel=new PermissionModel();
         permissionModel.setPerssionName(permissionName);
+        permissionModel.setId(Integer.valueOf(permissionId));
         try{
             int result=permissionService.updatePermission(permissionModel);
             return new JsonResponseData(true, StatusDefineMessage.GetMessage(StatusDefine.SUCCESS), StatusDefine.SUCCESS, "修改权限管理信息成功", result).toString();
@@ -305,6 +317,7 @@ public class PermissionController {
      * 方法异常  DBErrorException Exception
      * @Modyfied by
      */
+    @PreAuthorize("hasPms('权限管理权限',8)")
     @RequestMapping(value = "/api/permission",method = RequestMethod.DELETE)
     @ApiOperation(value = "删除权限管理信息",response = String.class,httpMethod = "DELETE",notes = "删除权限管理信息")
     public String deletePermission(
@@ -333,10 +346,10 @@ public class PermissionController {
      * 方法异常  DBErrorException Exception
      * @Modyfied by
      */
+    @PreAuthorize("hasPms('权限管理权限',1)")
     @RequestMapping(value = "/api/permission",method = RequestMethod.GET)
     @ApiOperation(value = "查询所有权限管理信息",response = String.class,httpMethod = "GET",notes = "查询所有权限管理信息")
     public String getAllPermission(
-            @ApiParam(value = "权限名称",required = true)@RequestParam(value = "permissionName",required = true) String permissionName
     ){
         List<PermissionModel> result=new ArrayList<>();
         try{
@@ -362,6 +375,7 @@ public class PermissionController {
      * 方法异常  DBErrorException Exception
      * @Modyfied by
      */
+    @PreAuthorize("hasPms('权限管理权限',1)")
     @RequestMapping(value = "/api/permissionById",method = RequestMethod.GET)
     @ApiOperation(value = "根据id查询所有权限信息",response = String.class,httpMethod = "GET",notes = "根据id查询所有权限信息")
     public String getPermissionById(
@@ -391,6 +405,7 @@ public class PermissionController {
      * 方法异常  DBErrorException Exception
      * @Modyfied by
      */
+    @PreAuthorize("hasPms('权限管理权限',1)")
     @RequestMapping(value = "/api/permissionByName",method = RequestMethod.GET)
     @ApiOperation(value = "根据Name查询所有权限信息",response = String.class,httpMethod = "GET",notes = "根据Name查询所有权限信息")
     public String getPermissionByName(

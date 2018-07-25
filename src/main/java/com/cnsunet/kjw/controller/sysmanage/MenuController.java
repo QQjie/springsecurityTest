@@ -14,6 +14,7 @@ import io.swagger.annotations.ApiParam;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.security.access.prepost.PreAuthorize;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
@@ -128,6 +129,7 @@ public class MenuController {
      * 方法异常
      * @Modyfied by
      */
+    @PreAuthorize("hasPms('菜单管理权限',2)")
     @RequestMapping(value = "/api/menu" ,method = RequestMethod.POST)
     @ApiOperation(value = "新增菜单信息",response = String.class,httpMethod = "POST",notes = "新增菜单信息")
     public String addMenu(
@@ -162,6 +164,7 @@ public class MenuController {
      * 方法异常
      * @Modyfied by
      */
+    @PreAuthorize("hasPms('菜单管理权限',4)")
     @RequestMapping(value = "/api/menu" ,method = RequestMethod.PUT)
     @ApiOperation(value = "修改菜单信息",response = String.class,httpMethod = "PUT",notes = "修改菜单信息")
     public String updateMenu(
@@ -198,6 +201,7 @@ public class MenuController {
      * 方法异常
      * @Modyfied by
      */
+    @PreAuthorize("hasPms('菜单管理权限',8)")
     @RequestMapping(value = "/api/menu" ,method = RequestMethod.DELETE)
     @ApiOperation(value = "删除菜单信息",response = String.class,httpMethod = "DELETE",notes = "删除菜单信息")
     public String deleteMenu(
@@ -331,7 +335,7 @@ public class MenuController {
         }
         try{
             int result=menuService.updateMenusForRole(Integer.valueOf(roleId),menuIds);
-            return new JsonResponseData(true, StatusDefineMessage.GetMessage(StatusDefine.SUCCESS), StatusDefine.SUCCESS, "用户用户菜单列表成功", result).toString();
+            return new JsonResponseData(true, StatusDefineMessage.GetMessage(StatusDefine.SUCCESS), StatusDefine.SUCCESS, "划分角色用户菜单列表成功", result).toString();
         }catch (DBErrorException e){
             //抛出异常返回异常信息
             logger.error("controller:MenuController. function:addOrUpdMenuForRole..msg:GET  DBErrorException. error:"+e.getMessage());
@@ -353,7 +357,7 @@ public class MenuController {
      * @Modyfied by
      */
     @RequestMapping(value = "/api/menuforuser" ,method = RequestMethod.POST)
-    @ApiOperation(value = "给用户分配菜单列表",response = String.class,httpMethod = "POST",notes = "给角色分配菜单列表")
+    @ApiOperation(value = "给用户分配菜单列表",response = String.class,httpMethod = "POST",notes = "给用户分配菜单列表")
     public String addOrUpdMenuForUser(
             @ApiParam(value = "角色Id",required = true) @RequestParam(value = "userId",required = true) String userId,
             @ApiParam(value = "菜单id数组 用英文逗号,隔开",required = true) @RequestParam(value = "muneIds",required = true) String muneIds
@@ -365,7 +369,7 @@ public class MenuController {
         }
         try{
             int result=menuService.updateMenusForUser(Integer.valueOf(userId),menuIds);
-            return new JsonResponseData(true, StatusDefineMessage.GetMessage(StatusDefine.SUCCESS), StatusDefine.SUCCESS, "用户用户菜单列表成功", result).toString();
+            return new JsonResponseData(true, StatusDefineMessage.GetMessage(StatusDefine.SUCCESS), StatusDefine.SUCCESS, "给用户分配菜单列表成功", result).toString();
         }catch (DBErrorException e){
             //抛出异常返回异常信息
             logger.error("controller:MenuController. function:addOrUpdMenuForRole..msg:GET  DBErrorException. error:"+e.getMessage());

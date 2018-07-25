@@ -40,8 +40,8 @@ public class RoleController {
      * 方法异常
      * @Modyfied by
      */
-    @PreAuthorize("hasRoleAddPms() || hasAnyRole('SADMIN')")
-    @RequestMapping(value = "/api/roletttt",method = RequestMethod.POST)
+    @PreAuthorize("hasRoleAddPms() || hasSadmin()")
+    @RequestMapping(value = "/api/role",method = RequestMethod.POST)
     @ApiOperation(value ="添加角色",response = String.class,httpMethod = "POST",notes="添加角色-供管理员添加角色使用需要权限")
     public String addRole(
             @ApiParam(value = "角色名称",required = true ) @RequestParam(value = "roleName" ,required = true) String roleName,
@@ -72,7 +72,7 @@ public class RoleController {
      * 方法异常 DBErrorException  Exception
      * @Modyfied by
      */
-    @PreAuthorize("hasRoleUpdatePms() || hasAnyRole('SADMIN')")
+    @PreAuthorize("hasRoleUpdatePms() || hasSadmin()")
     @RequestMapping(value = "/api/role",method = RequestMethod.PUT)
     @ApiOperation(value ="修改角色",response = String.class,httpMethod = "PUT",notes="修改角色-供管理员修改角色使用-需要权限")
     public String updateRole(
@@ -107,9 +107,9 @@ public class RoleController {
      * 方法异常
      * @Modyfied by
      */
-    @PreAuthorize("hasRoleDeletePms() || hasAnyRole('SADMIN')")
-    @RequestMapping(value = "/api/roledelete",method = RequestMethod.PUT)
-    @ApiOperation(value ="删除角色",response = String.class,httpMethod = "PUT",notes="删除角色-供管理员删除角色使用需要权限")
+    @PreAuthorize("hasRoleDeletePms() || hasSadmin()")
+    @RequestMapping(value = "/api/role",method = RequestMethod.DELETE)
+    @ApiOperation(value ="删除角色",response = String.class,httpMethod = "DELETE",notes="删除角色-供管理员删除角色使用需要权限")
     public String deleteRole(
             @ApiParam(value = "角色Id",required = true ) @RequestParam(value = "roleId" ,required = true) String roleId
     ){
@@ -135,7 +135,7 @@ public class RoleController {
      * 方法异常
      * @Modyfied by
      */
-    @PreAuthorize("hasRoleSelectPms() || hasAnyRole('SADMIN')")
+    @PreAuthorize("hasRoleSelectPms() || hasSadmin()")
     @RequestMapping(value = "/api/role",method = RequestMethod.GET)
     @ApiOperation(value ="查询所有角色",response = String.class,httpMethod = "GET",notes="查询所有角色-供管理员查询所有角色使用需要权限")
     public String getAllRoles(
@@ -163,7 +163,7 @@ public class RoleController {
      * 方法异常
      * @Modyfied by
      */
-    @PreAuthorize("hasRoleSelectPms() || hasAnyRole('SADMIN')")
+    @PreAuthorize("hasRoleSelectPms() || hasSadmin()")
     @RequestMapping(value = "/api/belowrole",method = RequestMethod.GET)
     @ApiOperation(value ="查询当前用户优先级低所有角色",response = String.class,httpMethod = "GET",notes="查询当前用户优先级低所有角色-供管理员查询所有角色使用需要权限")
     public String getAllBelowRoles(
@@ -191,7 +191,7 @@ public class RoleController {
      * 方法异常
      * @Modyfied by
      */
-    @PreAuthorize("hasRoleSelectPms() || hasAnyRole('SADMIN')")
+    @PreAuthorize("hasRoleSelectPms() || hasSadmin()")
     @RequestMapping(value = "/api/rolebyid",method = RequestMethod.GET)
     @ApiOperation(value ="查询角色",response = String.class,httpMethod = "GET",notes="查询角色-供管理员查询角色使用需要权限")
     public String getRoleById(
@@ -220,7 +220,7 @@ public class RoleController {
      * 方法异常
      * @Modyfied by
      */
-    @PreAuthorize("hasRoleSelectPms() || hasAnyRole('SADMIN')")
+    @PreAuthorize("hasRoleSelectPms() || hasSadmin()")
     @RequestMapping(value = "/api/rolebyname",method = RequestMethod.GET)
     @ApiOperation(value ="查询角色",response = String.class,httpMethod = "GET",notes="查询角色-供管理员查询所有角色使用需要权限")
     public String getRoleByName(
@@ -288,7 +288,7 @@ public class RoleController {
     ){
         try {
             Integer result=roleService.updateUserRole(Integer.valueOf(userId),Integer.valueOf(roleId));
-            return new JsonResponseData(true, StatusDefineMessage.GetMessage(StatusDefine.SUCCESS), StatusDefine.SUCCESS, "添加用户角色成功", result).toString();
+            return new JsonResponseData(true, StatusDefineMessage.GetMessage(StatusDefine.SUCCESS), StatusDefine.SUCCESS, "修改用户角色成功", result).toString();
         }catch (DBErrorException e){
             //抛出异常返回异常信息
             logger.error("controller:RoleController. function:updateUserRole..msg:GET  DBErrorException. error:"+e.getMessage());
@@ -309,9 +309,9 @@ public class RoleController {
      * 方法异常
      * @Modyfied by
      */
-    @PreAuthorize("hasRoleDeletePms() && hasUserDeletePms()")
-    @RequestMapping(value = "/api/urdelete",method = RequestMethod.PUT)
-    @ApiOperation(value ="给用户删除角色",response = String.class,httpMethod = "PUT",notes="给用户删除角色-供管理员删除用户角色使用需要权限")
+    @PreAuthorize("hasRoleDeletePms() && hasUserUpdatePms()")
+    @RequestMapping(value = "/api/userrole",method = RequestMethod.DELETE)
+    @ApiOperation(value ="给用户删除角色",response = String.class,httpMethod = "DELETE",notes="给用户删除角色-供管理员删除用户角色使用需要权限")
     public String deleteUserRole(
             @ApiParam(value = "用户ID",required = true ) @RequestParam(value = "userId" ,required = true) String userId,
             @ApiParam(value = "角色ID",required = true ) @RequestParam(value = "roleId" ,required = true) String roleId
@@ -321,11 +321,11 @@ public class RoleController {
             return new JsonResponseData(true, StatusDefineMessage.GetMessage(StatusDefine.SUCCESS), StatusDefine.SUCCESS, "删除用户角色成功", result).toString();
         }catch (DBErrorException e){
             //抛出异常返回异常信息
-            logger.error("controller:RoleController. function:deleteUserRole..msg:GET  DBErrorException. error:"+e.getMessage());
+            logger.error("controller:RoleController. function:deleteUserRole..msg:DELETE  DBErrorException. error:"+e.getMessage());
             return new JsonResponseData(false, StatusDefineMessage.GetMessage(StatusDefine.DB_ERROR), StatusDefine.DB_ERROR, "删除用户角色失败", null).toString();
         }catch (Exception e){
             //抛出异常返回异常信息
-            logger.error("controller:RoleController. function:deleteUserRole..msg:GET  Exception. error:"+e.getMessage());
+            logger.error("controller:RoleController. function:deleteUserRole..msg:DELETE  Exception. error:"+e.getMessage());
             return new JsonResponseData(false, StatusDefineMessage.GetMessage(StatusDefine.SYS_ERROR), StatusDefine.SYS_ERROR, "删除用户角色失败", null).toString();
         }
     }

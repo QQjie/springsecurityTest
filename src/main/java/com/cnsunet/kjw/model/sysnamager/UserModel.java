@@ -1,5 +1,7 @@
 package com.cnsunet.kjw.model.sysnamager;
 
+
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import org.springframework.jdbc.core.RowMapper;
 
 import java.sql.ResultSet;
@@ -100,7 +102,6 @@ public class UserModel {
     public void setLoginName(String loginName) {
         this.loginName = loginName;
     }*/
-
     public String getPassword() {
         return password;
     }

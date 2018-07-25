@@ -249,6 +249,21 @@ public class UserRepository {
         }
         return list;
     }
+    public List<RoleModel> getUserRoleByName(String name){
+        StringBuilder sql=new StringBuilder("");
+        sql.append("SELECT b.roleid as id,c.roleName,c.priority,c.status FROM user_info  a ");
+        sql.append("LEFT JOIN user_role b ON a.id=b.userId ");
+        sql.append("LEFT JOIN role c ON c.id=b.roleId and c.status=? ");
+        sql.append("WHERE a.userName=?");
+        List<RoleModel> list=null;
+        try{
+            list=jdbcTemplate.query(sql.toString(),new Object[]{ConstDefine.STATE_ABLE,name},RoleModel.RoleMapper.INSTANCE);
+        }catch (Exception e){
+            e.printStackTrace();
+            throw new DBErrorException("用户角色查询DBException");
+        }
+        return list;
+    }
 
     /**
      *@Author  huangjie
