@@ -143,6 +143,7 @@ public class PermissionServiceImpl implements IPermissionService {
         try{
             list=permissionRepository.getAllPermission();
         }catch(Exception e){
+            e.printStackTrace();
             throw new DBErrorException("查询所有的权限失败");
         }
         return list;

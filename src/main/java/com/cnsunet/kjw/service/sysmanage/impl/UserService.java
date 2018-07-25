@@ -1,6 +1,7 @@
 package com.cnsunet.kjw.service.sysmanage.impl;
 
 import com.cnsunet.kjw.exception.DBErrorException;
+import com.cnsunet.kjw.model.sysnamager.RoleModel;
 import com.cnsunet.kjw.model.sysnamager.UserModel;
 import com.cnsunet.kjw.repository.sysmanage.UserRepository;
 import com.cnsunet.kjw.service.sysmanage.IUserService;
@@ -164,6 +165,23 @@ public class UserService implements IUserService {
             result=userRepository.getUserPermAndOper(userId);
         }catch(Exception e){
             throw new DBErrorException("根据用户Id查询用户所拥有的权限操作异常");
+        }
+        return result;
+    }
+    /**
+     *@Author  huangjie
+     *@Description 根据用户名称查询用户所拥有的角色
+     *@Date  2018/7/17 14:27
+     *@Param
+     *@Return
+     *@Modyfied by
+     */
+    public List<RoleModel> getUserRoleByName(String  userName){
+        List<RoleModel> result=null;
+        try{
+            result=userRepository.getUserRoleByName(userName);
+        }catch(Exception e){
+            throw new DBErrorException("根据用户名称查询用户所拥有的角色异常");
         }
         return result;
     }

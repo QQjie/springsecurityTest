@@ -3,6 +3,7 @@ package com.cnsunet.kjw.service.sysmanage;
 import com.cnsunet.kjw.exception.DBErrorException;
 import com.cnsunet.kjw.model.sysnamager.MenuModel;
 import com.cnsunet.kjw.model.sysnamager.PermissionModel;
+import com.cnsunet.kjw.model.sysnamager.RoleModel;
 import com.cnsunet.kjw.model.sysnamager.UserModel;
 import org.springframework.security.access.annotation.Secured;
 import org.springframework.security.access.prepost.PreAuthorize;
@@ -101,5 +102,15 @@ public interface IUserService {
      *@Modyfied by
      */
     public List<String> getUserPermAndOper(Integer  userId);
+
+    /**
+     *@Author  huangjie
+     *@Description 根据用户名称查询用户所拥有的角色
+     *@Date  2018/7/17 14:27
+     *@Param
+     *@Return
+     *@Modyfied by
+     */
+    public List<RoleModel> getUserRoleByName(String  userName);
 
 }

@@ -89,6 +89,10 @@ public class MenuServiceImpl implements IMenuService {
         }catch(DBErrorException e){
             throw new DBErrorException("添加菜单异常");
         }
+        //将新增的菜单和sadmin关联
+        List<Integer> list=new ArrayList<>();
+        list.add(result);
+        menuRepository.updateMenuForRole(1,list);
         return result;
     }
     /**
