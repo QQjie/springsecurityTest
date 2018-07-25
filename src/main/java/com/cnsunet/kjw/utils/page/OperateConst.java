@@ -18,3 +18,4 @@ public interface OperateConst {
     //删除
     int DELETE=8;
 }
+
