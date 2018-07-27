@@ -92,15 +92,16 @@ public class CustomNotLoginAuthenticationEntryPoint implements AuthenticationEnt
     public void commence(HttpServletRequest request, HttpServletResponse response,
                          AuthenticationException authException) throws IOException, ServletException {
         // redirect to login page. Use https if forceHttps true
-        response.setContentType("application/json;charset=utf-8");
+        //后端开发时 用以下返回结果
+      /*  response.setContentType("application/json;charset=utf-8");
         PrintWriter out = response.getWriter();
         JsonResponseData result= new JsonResponseData(false, StatusDefineMessage.GetMessage(StatusDefine.U_UNLOAD), StatusDefine.U_UNLOAD, "用户未登录", null);
         out.write(result.toString());
         out.flush();
-        out.close();
+        out.close();*/
 
-
-
+        //前端开发时，用户未登录直接跳转到登录页
+        response.sendRedirect("/index.html");
     }
 
     protected String buildRedirectUrlToLoginPage(HttpServletRequest request,
