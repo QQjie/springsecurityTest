@@ -89,7 +89,7 @@ public class UserController /*extends AbstractAuthenticationProcessingFilter*/ {
     public String userLogin(
             @ApiParam(value = "用户名",required =true ) @RequestParam(value = "username",required = true) String username,
             @ApiParam(value = "密码",required =true ) @RequestParam(value = "password",required = true) String password,
-            @ApiParam(value = "token1",required =true ) @RequestParam(value = "token",required = true) String token,
+            @ApiParam(value = "token1",required =false ) @RequestParam(value = "token",required = false) String token,
             HttpServletRequest request
     ){
         UsernamePasswordAuthenticationToken authRequest =
@@ -101,7 +101,7 @@ public class UserController /*extends AbstractAuthenticationProcessingFilter*/ {
             HttpSession session = request.getSession();
             session.setAttribute("SPRING_SECURITY_CONTEXT", SecurityContextHolder.getContext()); // 这个非常重要，否则验证后将无法登陆
         }catch(AuthenticationException e){
-            return new JsonResponseData(true, StatusDefineMessage.GetMessage(StatusDefine.U_PWD_FAILED), StatusDefine.U_PWD_FAILED, "用户登录失败", null).toString();
+            return new JsonResponseData(false, StatusDefineMessage.GetMessage(StatusDefine.U_PWD_FAILED), StatusDefine.U_PWD_FAILED, "用户登录失败", null).toString();
         }
       //在这里用redis生成token并存储 然后返回用户信息 加token
         return new JsonResponseData(true, StatusDefineMessage.GetMessage(StatusDefine.SUCCESS), StatusDefine.SUCCESS, "用户登录成功", null).toString();
