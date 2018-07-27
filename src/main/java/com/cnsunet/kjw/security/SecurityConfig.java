@@ -80,6 +80,7 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
                 .and().exceptionHandling().authenticationEntryPoint( customNotLoginAuthenticationEntryPoint())//用户未登录处理
                 .and()
                 .formLogin()
+                .loginPage("/index.html")
                // .loginProcessingUrl("/api/notlogin")  这个请求路径是 form表单的anction值
                // .failureHandler(customAuthenticationFailHander)
                 //.successHandler(savedRequestAwareAuthenticationSuccessHandler())
@@ -107,7 +108,8 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
                 "/swagger-resources",                             //用来获取api_doc的url
                 "/swagger-resources/configuration/security",  //安全选项
                 "/swagger-ui.html","/webjars/**",
-                "/api/login","/api/logout","/api/notlogin"
+                "/api/login","/api/logout","/api/notlogin",
+                "/**.js"                                            //允许static文件夹下所有的js文件可访问，防止前后端整合时，文件不可访问的问题
         );
     }
 
